@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Techno OutSource</title>
+
+    <style>
+        #service_home {
+            background-image: url(images/service_page_bg.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        #markiting {
+            padding: 30px 0px 100px 0px;
+        }
+        
+        .markiting_h2 {
+            font-size: 33px;
+            text-align: center;
+            color: #666666;
+            font-weight: 700;
+            margin: 0px auto 10px;
+            font-family: roboto;
+        }
+        
+        .markiting_hr {
+            width: 45%;
+            color: #2878FF;
+            margin: 0px auto 50px;
+        }
+        
+        .markiting_img {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .markiting_p {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 18px;
+            color: #434343;
+            text-align: justify;
+        }
+        
+        .markiting_card {
+            padding: 50px 12px;
+            border-radius: 2px;
+            transition: 1s;
+            border-top: 6px solid #2878FF !important;
+            border-left: 1px solid #c7c7c7 !important;
+            border-right: 1px solid #c7c7c7 !important;
+            border-bottom: 1px solid #c7c7c7 !important;
+        }
+        
+        .markiting_card_icon {
+            width: 80px;
+            height: auto;
+            background-color: #2878FF;
+            margin: auto;
+            padding: 28px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        
+        .markiting_card i {
+            font-size: 28px;
+            text-align: center;
+            display: block;
+            color: #fff;
+        }
+        
+        .markiting_card h5 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #666666;
+            text-align: center;
+            font-family: roboto;
+        }
+        
+        .markiting_card p {
+            font-size: 18px;
+            font-weight: 300;
+            color: #434343;
+            text-align: center;
+            font-family: roboto;
+        }
+        
+        .markiting_card_main {
+            margin: 10px 0px;
+        }
+        
+        @media (max-width: 991px) and (min-width:300px) {
+            .markiting_p {
+                margin-top: 20px;
+            }
+        }
+    </style>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/slicknav.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/admission.css" rel="stylesheet">
+    <link href="css/service_page.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="font/flaticon.css">
+</head>
+<!--/head-->
+
+<body onload="screenLoad()" style="scroll-behavior: smooth;">
+
+
+    <!--? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="img/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--#header-->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-top">
+                    <!-- Left Social -->
+                    <div class="container">
+                        <div class="row">
+                            <ul class="header-social col-6">
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.facebook.com/technooutsource"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google"></i></a></li>
+                            </ul>
+
+                            <ul class="header-email col-6">
+                                <li style="border-left: 1ps solid black;">
+                                    <P>info@technooutsourcebd.com</P>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container logo_part">
+                    <div class="row">
+                        <div class="logo col-4">
+                            <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        </div>
+
+                        <div class="logo col-8">
+                            <ul class="logo_part_ul row">
+                                <li class="col-2"></li>
+                                <li class="col-5">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="flaticon-working-hours"></span>
+                                        </div>
+                                        <div class="col-9">
+                                            <h4 class="sub_header_title">Office Hour</h4>
+                                            <p class="sub_header_p">Sat-Thu:<br>09:00 AM To 5:00 PM</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-5">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="flaticon-time-call"></span>
+                                        </div>
+                                        <div class="col-9">
+                                            <h4 class="sub_header_title">Call Us</h4>
+                                            <p class="sub_header_p">+880 1871415788<br>+880 258 0515 19</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-bottom header-sticky">
+                    <!-- Logo -->
+                    <div class="container">
+                        <div class="menu-wrapper">
+                            <!-- Logo -->
+                            <div class="logo logo2 d-block d-lg-none">
+                                <a href="index.html"><img src="images/logo.png" alt=""></a>
+                            </div>
+                            <!-- Main-menu -->
+                            <div class="main-menu col-12">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li style="display: none;"><a id="nav_a" href="index.html">Home</a></li>
+                                        <li class=""><a id="nav_a" href="index.html#home-slider">Home</a></li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#About_us">About Us</a></li>
+
+                                        <li class=""><a id="nav_a" class="" href="index.html#our_course">Courses</a>
+                                            <ul class="submenu">
+                                                <li><a href="graphic_design.html">Graphic Design</a></li>
+                                                <li><a href="web_design.html">Web Design</a></li>
+                                                <li><a href="Web_Development.html">Web Development</a></li>
+                                                <li><a href="Digital_Marketing.html">Digital Marketing</a></li>
+                                                <li><a href="ui_ux_cource.html">UI/UX Design</a></li>
+                                                <li><a href="app_development.html">App Development</a></li>
+                                                <li><a href="Animation_cource.html">3D Animation</a></li>
+                                                <li><a href="Interior_and_Exterior_Design.html">Interior Design</a></li>
+                                                <li><a href="#">Video Editing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="active"><a id="nav_a" class="" href="index.html#Our-Services">Our Services</a>
+                                            <ul class="submenu">
+                                                <li><a href="web.html">Web Design & Development</a></li>
+                                                <li><a href="graphic.html">Graphic Design</a></li>
+                                                <li><a href="SEO.html">SEO</a></li>
+                                                <li><a href="app_page.html">Application Development</a></li>
+                                                <li><a href="http://cybercombd.com">Hardware Services</a></li>
+                                                <li><a href="marketing.html">Maketing Strategy</a></li>
+                                                <li><a href="Software_Development.html">Software Development</a></li>
+                                                <li><a href="http://www.technooutsource.com/default.asp">ISP Services</a></li>
+                                                <li><a href="Content_Writing.html">Content Management</a></li>
+                                                <li><a href="ui_ux.html">UI/UX</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#portfolio">Portfolio</a></li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#blog">Blog</a></li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#contact">Contact Us</a></li>
+                                        <li class=""><a id="Admission_a" class="" href="admission.html">Admission</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- Header-btn -->
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+
+
+
+
+    <!--#Web Home-->
+    <section id="service_home">
+        <div class="container">
+            <h2 class="service_home_tile">We Provide<span>THE BEST</span><br>Standard Marketing Strategy<br>Based on <span>Your Business.</span> <br></h2>
+        </div>
+    </section>
+
+
+
+    <section id="markiting">
+        <div class="container">
+            <h2 class="markiting_h2">Techno OutSource BD’s Marketing Consulting Expertise</h2>
+            <hr class="markiting_hr">
+            <div class="row">
+                <div class="col-xm-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <img class="markiting_img" src="img/markitiong_img.jpg" />
+                </div>
+                <div class="col-xm-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                    <p class="markiting_p">
+                        Seeking a marketing strategy consultant to help grow your business? Identifying and filling customer needs is key to marketing success.The most effective strategic marketers use deep customer insight to drive segmentation, targeting, positioning and offering
+                        development. This ensures that marketing plan development is grounded in marketplace realities to best meet customer needs.Techno OutSource BD’s marketing strategy consulting services include market assessment, “STP” framework
+                        development (i.e., Segmentation, Targeting and Positioning), and marketing plan development.Here is more information on our marketing consulting services:
+                    </p>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 40px;">
+                <div class="row">
+                    <div class="markiting_card_main col-xm-12 col-sm-12 col-mb-4 col-lg-4 col-xl-4">
+                        <!-- Card -->
+                        <div class="card markiting_card">
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <div class="markiting_card_icon">
+                                    <i class="fa fa-binoculars"></i>
+                                </div>
+                                <h5>Market Assessment</h5>
+                                <p>Market assessment emphasizes Three C’s analysis (i.e., Customer, Competitor and Company) to uncover strategic opportunities.</p>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="markiting_card_main col-xm-12 col-sm-12 col-mb-4 col-lg-4 col-xl-4">
+                        <!-- Card -->
+                        <div class="card markiting_card">
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <div class="markiting_card_icon">
+                                    <i class="fa fa-th"></i>
+                                </div>
+                                <h5>Market Segmentation</h5>
+                                <p>Market segmentation involves developing a proprietary customer framework, then mapping market segments and potential opportunities.</p>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="markiting_card_main col-xm-12 col-sm-12 col-mb-4 col-lg-4 col-xl-4">
+                        <!-- Card -->
+                        <div class="card markiting_card">
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <div class="markiting_card_icon">
+                                    <i class="fa fa-bullseye"></i>
+                                </div>
+                                <h5>Target Marketing</h5>
+                                <p>Target marketing defines the most attractive segments, based on size, growth, benefit orientation and internal fit.</p>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="markiting_card_main col-xm-12 col-sm-12 col-mb-4 col-lg-4 col-xl-4">
+                        <!-- Card -->
+                        <div class="card markiting_card">
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <div class="markiting_card_icon">
+                                    <i class="fa fa-arrows"></i>
+                                </div>
+                                <h5>Strategic Positioning</h5>
+                                <p>Strategic positioning results in the most relevant, differentiated and credible expression of the core offering.</p>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="markiting_card_main col-xm-12 col-sm-12 col-mb-4 col-lg-4 col-xl-4">
+                        <!-- Card -->
+                        <div class="card markiting_card">
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <div class="markiting_card_icon">
+                                    <i class="fa fa-file"></i>
+                                </div>
+                                <h5>Marketing Plan Development</h5>
+                                <p>Marketing plan development includes marketing mix (i.e., the 4 – 5P’s) definition, including customer acquisition and retention details.</p>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="markiting_card_main col-xm-12 col-sm-12 col-mb-4 col-lg-4 col-xl-4">
+                        <!-- Card -->
+                        <div class="card markiting_card">
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <div class="markiting_card_icon">
+                                    <i class="fa fa-bar-chart"></i>
+                                </div>
+                                <h5>Market Research</h5>
+                                <p>Deep customer insight is the platform on which marketing strategies and plans are developed.</p>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section id="order_us">
+        <div class="container">
+            <a href="index.html#contact">Order Us</a>
+        </div>
+    </section>
+
+
+    <!--Footer-->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="Follow-Us col-xm-6 col-sm-4 col-lg-2">
+                    <h3 class="footer-title-text">Follow Us</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/technooutsource">
+                                <ion-icon name="logo-facebook" class="socil_icon"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <ion-icon name="logo-twitter" class="socil_icon"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <ion-icon name="logo-youtube" class="socil_icon"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="links col-xm-6 col-sm-4 col-lg-2">
+                    <h3 class="footer-title-text">Links</h3>
+                    <ul class="link-ul">
+                        <li class="link-li">
+                            <a href="index.html" class="links-a">Home</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#About_us" class="links-a">About Us</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#our_course" class="links-a">Courses</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#Our-Services" class="links-a">Our Services</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#portfolio" class="links-a">Portfolio</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#blog" class="links-a">Blogs</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#contact" class="links-a">Contact US</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="admission.html" class="links-a">Admission</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Address col-xm-12 col-sm-4 col-lg-3">
+                    <h3 class="footer-title-text">Address</h3>
+                    <P class="Address-p">BANGLADESH OFFICE ADDRESS: Plot# 10/C, Road# 1/1, Block# Ka/Kha, Section# 6, Dhaka 1216</P>
+                    <p class="Address-p">UK OFFICE ADDRESS: No 1, 284 Barking Road, Eastham, London E6 3BA, United Kingdom.</p>
+                </div>
+                <div class="Map col-sm-12 col-lg-5">
+                    <h3 class="footer-title-text">Map</h3>
+                    <a href="https://goo.gl/maps/Kj7FSzo3uoxNYFqR8"><img src="images/map.png" class="map_image" /></a>
+                    <P class="Map-p">Mirpur, Dhaka, Bangladesh</P>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--CopyRight-->
+    <p class="copyright-text">Copyright and Reserved by ©Techno Outsource Designed by Team TechBCD</p>
+
+
+    <!-- Scroll Up -->
+    <div id="back-top">
+        <a title="Go to Top" href="#"><i class="fa fa-chevron-up"></i></a>
+    </div>
+
+    <!-- Java script Start -->
+    <script type="text/javascript " src="js/jquery.js "></script>
+    <script type="text/javascript " src="js/bootstrap.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
+    <script type="text/javascript " src="js/lightbox.min.js "></script>
+    <script type="text/javascript " src="js/wow.min.js "></script>
+    <script type="text/javascript " src="js/main.js "></script>
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js "></script>
+    <script type="text/javascript " src="js/jquery.nav.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- ===== IONICONS ===== -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script type="text/javascript " src="js/jquery.slicknav.min.js "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // Disable Right Click
+        document.querySelector('body').addEventListener('contextmenu', disableRightClick);
+
+        function disableRightClick(e) {
+            e.preventDefault();
+        }
+
+        $(function() {
+            var navbar = $('.header-sticky');
+            $(window).scroll(function() {
+                if ($(window).scrollTop() <= 40) {
+                    navbar.removeClass('navbar-scroll');
+                } else {
+                    navbar.addClass('navbar-scroll');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

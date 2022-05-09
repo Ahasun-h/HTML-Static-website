@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Techno OutSource</title>
+
+    <style>
+        #service_home {
+            background-image: url(images/service_page_bg.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        #content_writing_body {
+            padding: 100px 0px 100px 0px;
+            background: #F5F5F5;
+        }
+        
+        .content_writing_body_h3 {
+            font-size: 32px;
+            text-align: center;
+            font-weight: 500;
+            color: #666666;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .content_writing_body_h6 {
+            font-size: 18px;
+            text-align: center;
+            font-weight: 300;
+            color: #666666;
+            margin-bottom: 60px;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .content_writing_tab_li {
+            padding: 32px 0px 16px 0px;
+            border-bottom: 4px solid transparent;
+            border-radius: 0px 0px 4px 4px;
+            box-shadow: 2px 5px 3px gray;
+        }
+        
+        #content_writing_body .active {
+            border-bottom: 4px solid blue;
+        }
+        
+        .content_writing_tab_h3 {
+            font-size: 18px;
+            text-align: center;
+            font-weight: 700;
+            margin-top: 16px;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .content_writing_tab_p {
+            font-size: 18px;
+            text-align: center;
+            font-weight: 300;
+            margin-top: 16px;
+            font-family: 'Roboto', sans-serif;
+            color: #666666;
+        }
+        
+        .active .content_writing_tab_h3 {
+            color: blue;
+        }
+        
+        .active .content_writing_tab_p {
+            color: #666666;
+        }
+        
+        .content_writing_tab_image {
+            height: 120px;
+            display: block;
+            margin: 20px auto 20px;
+        }
+        
+        .content_writing_tab_h4 {
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            color: #666666;
+        }
+        
+        .content_writing_tab_in_p {
+            font-size: 18px;
+            color: black;
+            text-align: justify;
+            line-height: 1.3;
+        }
+        
+        .content_writing_tab_h2 {
+            display: block;
+            position: relative;
+            background: #08f;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            line-height: 100px;
+            color: #fff;
+            font-size: 50px;
+            text-align: center;
+            margin: 44px auto 10px;
+        }
+        
+        .content_writing_tab_inner_h4 {
+            font-size: 28px;
+            text-align: left;
+            font-weight: 700;
+            color: #454545;
+            margin-top: 14px;
+            margin-bottom: 20px;
+        }
+        
+        .content_writing_tab_inner_p {
+            font-size: 18px;
+            color: black;
+            text-align: justify;
+            line-height: 1.3;
+        }
+    </style>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/slicknav.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/admission.css" rel="stylesheet">
+    <link href="css/service_page.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="font/flaticon.css">
+</head>
+<!--/head-->
+
+<body onload="screenLoad()" style="scroll-behavior: smooth;">
+
+    <!--? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="img/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#header-->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-top">
+                    <!-- Left Social -->
+                    <div class="container">
+                        <div class="row">
+                            <ul class="header-social col-6">
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.facebook.com/technooutsource"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google"></i></a></li>
+                            </ul>
+                            <ul class="header-email col-6">
+                                <li style="border-left: 1ps solid black;">
+                                    <P>info@technooutsourcebd.com</P>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container logo_part">
+                    <div class="row">
+                        <div class="logo col-4">
+                            <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        </div>
+
+                        <div class="logo col-8">
+                            <ul class="logo_part_ul row">
+                                <li class="col-2"></li>
+                                <li class="col-5">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="flaticon-working-hours"></span>
+                                        </div>
+                                        <div class="col-9">
+                                            <h4 class="sub_header_title">Office Hour</h4>
+                                            <p class="sub_header_p">Sat-Thu:<br>09:00 AM To 5:00 PM</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-5">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="flaticon-time-call"></span>
+                                        </div>
+                                        <div class="col-9">
+                                            <h4 class="sub_header_title">Call Us</h4>
+                                            <p class="sub_header_p">+880 1871415788<br>+880 258 0515 19</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom header-sticky">
+                    <!-- Logo -->
+                    <div class="container">
+                        <div class="menu-wrapper">
+                            <!-- Logo -->
+                            <div class="logo logo2 d-block d-lg-none">
+                                <a href="index.html"><img src="images/logo.png" alt=""></a>
+                            </div>
+                            <!-- Main-menu -->
+                            <div class="main-menu col-12">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li style="display: none;"><a id="nav_a" href="index.html">Home</a></li>
+                                        <li class=""><a id="nav_a" href="index.html#home-slider">Home</a></li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#About_us">About Us</a></li>
+
+                                        <li class=""><a id="nav_a" class="" href="index.html#our_course">Courses</a>
+                                            <ul class="submenu">
+                                                <li><a href="graphic_design.html">Graphic Design</a></li>
+                                                <li><a href="web_design.html">Web Design</a></li>
+                                                <li><a href="Web_Development.html">Web Development</a></li>
+                                                <li><a href="Digital_Marketing.html">Digital Marketing</a></li>
+                                                <li><a href="ui_ux_cource.html">UI/UX Design</a></li>
+                                                <li><a href="app_development.html">App Development</a></li>
+                                                <li><a href="Animation_cource.html">3D Animation</a></li>
+                                                <li><a href="Interior_and_Exterior_Design.html">Interior Design</a></li>
+                                                <li><a href="#">Video Editing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="active"><a id="nav_a" class="" href="index.html#Our-Services">Our Services</a>
+                                            <ul class="submenu">
+                                                <li><a href="web.html">Web Design & Development</a></li>
+                                                <li><a href="graphic.html">Graphic Design</a></li>
+                                                <li><a href="SEO.html">SEO</a></li>
+                                                <li><a href="app_page.html">Application Development</a></li>
+                                                <li><a href="http://cybercombd.com">Hardware Services</a></li>
+                                                <li><a href="marketing.html">Maketing Strategy</a></li>
+                                                <li><a href="Software_Development.html">Software Development</a></li>
+                                                <li><a href="http://www.technooutsource.com/default.asp">ISP Services</a></li>
+                                                <li><a href="Content_Writing.html">Content Management</a></li>
+                                                <li><a href="ui_ux.html">UI/UX</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#portfolio">Portfolio</a></li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#blog">Blog</a></li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#contact">Contact Us</a></li>
+                                        <li class=""><a id="Admission_a" class="" href="admission.html">Admission</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- Header-btn -->
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+
+    <!--#Web Home-->
+    <section id="service_home">
+        <div class="container">
+            <h2 class="service_home_tile">Need a writer?<br> Summon us for a<br><span>GREAT EXPERIENCE.</span></h2>
+        </div>
+    </section>
+
+    <section id="content_writing_body">
+        <div class="container">
+            <h3 class="content_writing_body_h3">We Make Content Creation Simple</h3>
+            <h6 class="content_writing_body_h6">Flexible content solutions to meet your unique needs.</h6>
+
+
+            <div class="row">
+
+                <div class="col-12 tabs" style="padding: 0px">
+                    <ul class="row" style="padding: 0px;background: white;">
+
+                        <li class="col-6 content_writing_tab_li active">
+                            <h3 class="content_writing_tab_h3">Content Marketplace</h3>
+                            <p class="content_writing_tab_p">Leverage our self-serve platform to connect with and buy website content from over several professional writers.</p>
+                        </li>
+
+                        <li class="col-6 content_writing_tab_li ">
+                            <h3 class="content_writing_tab_h3">Enterprise Content Services</h3>
+                            <p class="content_writing_tab_p">Partner with our experienced enterprise team for a fully managed solution that delivers publish-ready content at any scale.</p>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="col-12" style="margin-top: 20px">
+                    <div class="tab_wrap" style="display: block;">
+                        <div class="container cource_tab_content">
+                            <div class="row">
+                                <div class="col-xm-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                                    <img class="content_writing_tab_image" src="img/content_image.jpeg" />
+                                    <h4 class="content_writing_tab_h4">Easy to Use</h4>
+                                    <p class="content_writing_tab_in_p">Instead of endlessly searching for freelance writers and haggling over price, let us match your project with writers from our workforce who best suit your needs. Just tell us what you need, and watch the writing begin.</p>
+                                </div>
+                                <div class="col-xm-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                                    <img class="content_writing_tab_image" src="img/content_wriing.jpeg" />
+                                    <h4 class="content_writing_tab_h4">Fast Turnaround</h4>
+                                    <p class="content_writing_tab_in_p">Our writers take turnaround times seriously, so most orders on our marketplace are completed within 24 hours. If you need one piece of high-quality content created quickly or you’re looking to scale up, our workforce
+                                        will make it happen.</p>
+                                </div>
+                                <div class="col-xm-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                                    <img class="content_writing_tab_image" src="img/content_witing_image_three.jpeg" />
+                                    <h4 class="content_writing_tab_h4">High Quality</h4>
+                                    <p class="content_writing_tab_in_p">Every completed order on our platform is scored for quality. Writers who perform well are promoted, and those who don’t are demoted. It keeps our writer motivated to deliver top-notch content that will help you succeed
+                                        in your content marketing goals.</p>
+                                </div>
+
+                                <div class="col-xm-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                                    <h2 class="content_writing_tab_h2">1</h2>
+                                    <h4 class="content_writing_tab_inner_h4">Place orders with our simple interface</h4>
+                                    <p class="content_writing_tab_inner_p">Our one-page order form asks you a few simple, but essential questions about your content requirements. You can easily specify voice tone, keywords, and other important guidelines.</p>
+
+                                </div>
+
+                                <div class="col-xm-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                                    <h2 class="content_writing_tab_h2">2</h2>
+                                    <h4 class="content_writing_tab_inner_h4">Qualified writers create your content</h4>
+                                    <p class="content_writing_tab_inner_p">A qualified writer will claim your order and write your content based on your guidelines. Use instant chat or request revisions to ensure the content perfectly matches your requirements.</p>
+
+                                </div>
+
+                                <div class="col-xm-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                                    <h2 class="content_writing_tab_h2">3</h2>
+                                    <h4 class="content_writing_tab_inner_h4">Engage your audience and increase search traffic</h4>
+                                    <p class="content_writing_tab_inner_p">Publish amazing content that engages your target audience. Word of mouth, social shares, and organic search traffic together grow your customer base. It’s that easy!</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="tab_wrap" style="display: none;">
+                        <div class="container cource_tab_content">
+                            <div class="row">
+                                <div class="col-xm-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                                    <img class="content_writing_tab_image" src="img/content_image_four.jpeg" />
+                                    <h4 class="content_writing_tab_h4">Fully Managed</h4>
+                                    <p class="content_writing_tab_in_p">Our skilled production team has experience running content programs for the world’s biggest brands, marketing agencies and retailers. When you choose our Enterprise program, you’ll work closely with one of these industry
+                                        veterans as your content manager and enjoy fully managed services.</p>
+                                </div>
+                                <div class="col-xm-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                                    <img class="content_writing_tab_image" src="img/content_writing_five.jpeg" />
+                                    <h4 class="content_writing_tab_h4">Publish-Ready Content</h4>
+                                    <p class="content_writing_tab_in_p">Writing website content at scale requires meticulous editing and quality assurance to ensure it has a consistent voice and meets your guidelines. Your content manager will ensure that the content you receive is publish-ready
+                                        and adheres to your creative brief and style guide when it’s delivered.</p>
+                                </div>
+                                <div class="col-xm-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                                    <img class="content_writing_tab_image" src="img/content_writing_seven.jpeg" />
+                                    <h4 class="content_writing_tab_h4">Complex Content Projects</h4>
+                                    <p class="content_writing_tab_in_p">Our Enterprise team adds a layer of expertise to your most complicated content writing projects to help them be successful. Whether you need long-form articles, Amazon A+ product descriptions or detailed city pages
+                                        – at scale – we’ve got you covered.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+    </section>
+
+
+    <section id="order_us" style="background-color: #F5F5F5;">
+        <div class="container">
+            <a href="index.html#contact">Order Us</a>
+        </div>
+    </section>
+
+
+    <!--Footer-->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="Follow-Us col-xm-6 col-sm-4 col-lg-2">
+                    <h3 class="footer-title-text">Follow Us</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/technooutsource">
+                                <ion-icon name="logo-facebook" class="socil_icon"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <ion-icon name="logo-twitter" class="socil_icon"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <ion-icon name="logo-youtube" class="socil_icon"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="links col-xm-6 col-sm-4 col-lg-2">
+                    <h3 class="footer-title-text">Links</h3>
+                    <ul class="link-ul">
+                        <li class="link-li">
+                            <a href="index.html" class="links-a">Home</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#About_us" class="links-a">About Us</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#our_course" class="links-a">Courses</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#Our-Services" class="links-a">Our Services</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#portfolio" class="links-a">Portfolio</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#blog" class="links-a">Blogs</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#contact" class="links-a">Contact US</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="admission.html" class="links-a">Admission</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Address col-xm-12 col-sm-4 col-lg-3">
+                    <h3 class="footer-title-text">Address</h3>
+                    <P class="Address-p">BANGLADESH OFFICE ADDRESS: Plot# 10/C, Road# 1/1, Block# Ka/Kha, Section# 6, Dhaka 1216</P>
+                    <p class="Address-p">UK OFFICE ADDRESS: No 1, 284 Barking Road, Eastham, London E6 3BA, United Kingdom.</p>
+                </div>
+                <div class="Map col-sm-12 col-lg-5">
+                    <h3 class="footer-title-text">Map</h3>
+                    <a href="https://goo.gl/maps/Kj7FSzo3uoxNYFqR8"><img src="images/map.png" class="map_image" /></a>
+                    <P class="Map-p">Mirpur, Dhaka, Bangladesh</P>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CopyRight-->
+    <p class="copyright-text">Copyright and Reserved by ©Techno Outsource Designed by Team TechBCD</p>
+
+    <!-- Scroll Up -->
+    <div id="back-top">
+        <a title="Go to Top" href="#"><i class="fa fa-chevron-up"></i></a>
+    </div>
+
+    <!-- Java script Start -->
+    <script type="text/javascript " src="js/jquery.js "></script>
+    <script type="text/javascript " src="js/bootstrap.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
+    <script type="text/javascript " src="js/lightbox.min.js "></script>
+    <script type="text/javascript " src="js/wow.min.js "></script>
+    <script type="text/javascript " src="js/main.js "></script>
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js "></script>
+    <script type="text/javascript " src="js/jquery.nav.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- ===== IONICONS ===== -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script type="text/javascript " src="js/jquery.slicknav.min.js "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script>
+        var tabs = document.querySelectorAll(".tabs ul li");
+        var tab_wraps = document.querySelectorAll(".tab_wrap");
+
+        tabs.forEach(function(tab, tab_index) {
+            tab.addEventListener("click", function() {
+                tabs.forEach(function(tab) {
+                    tab.classList.remove("active");
+                })
+                tab.classList.add("active");
+
+                tab_wraps.forEach(function(content, content_index) {
+                    if (content_index == tab_index) {
+                        content.style.display = "block";
+                    } else {
+                        content.style.display = "none";
+                    }
+                })
+
+            })
+        })
+
+        // Disable Right Click
+        document.querySelector('body').addEventListener('contextmenu', disableRightClick);
+
+        function disableRightClick(e) {
+            e.preventDefault();
+        }
+
+        $(function() {
+            var navbar = $('.header-sticky');
+            $(window).scroll(function() {
+                if ($(window).scrollTop() <= 40) {
+                    navbar.removeClass('navbar-scroll');
+                } else {
+                    navbar.addClass('navbar-scroll');
+                }
+            });
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+#admission_form {
+    background: #fff 0 100% repeat-x;
+    position: relative;
+    padding: 36px 0 80px 0;
+    display: block;
+    top: 0px;
+    height: auto;
+}
+
+.admission_form_title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #434343;
+    margin-top: 80px;
+}
+
+#admission_form_dvider {
+    width: 40%;
+    color: #434343;
+    margin-left: 0px;
+    margin-bottom: 40px;
+}
+
+label {
+    margin-top: 12px;
+}

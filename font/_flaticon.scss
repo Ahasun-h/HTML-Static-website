@@ -1,0 +1,114 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 30/11/2020 10:00
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-art:before { content: "\f100"; }
+.flaticon-data:before { content: "\f101"; }
+.flaticon-web-design:before { content: "\f102"; }
+.flaticon-marketing:before { content: "\f103"; }
+.flaticon-ux-design:before { content: "\f104"; }
+.flaticon-mobile-app:before { content: "\f105"; }
+.flaticon-animation:before { content: "\f106"; }
+.flaticon-interior-design:before { content: "\f107"; }
+.flaticon-video-editing:before { content: "\f108"; }
+.flaticon-insurance:before { content: "\f109"; }
+.flaticon-bow:before { content: "\f10a"; }
+.flaticon-value:before { content: "\f10b"; }
+.flaticon-vector:before { content: "\f10c"; }
+.flaticon-graphic-design:before { content: "\f10d"; }
+.flaticon-pencil:before { content: "\f10e"; }
+.flaticon-landing-page:before { content: "\f10f"; }
+.flaticon-sketching:before { content: "\f110"; }
+.flaticon-test:before { content: "\f111"; }
+.flaticon-vga-card:before { content: "\f112"; }
+.flaticon-bullhorn:before { content: "\f113"; }
+.flaticon-computer:before { content: "\f114"; }
+.flaticon-isp:before { content: "\f115"; }
+.flaticon-content-management-system:before { content: "\f116"; }
+.flaticon-ui:before { content: "\f117"; }
+.flaticon-seo:before { content: "\f118"; }
+.flaticon-working-hours:before { content: "\f119"; }
+.flaticon-time-call:before { content: "\f11a"; }
+.flaticon-add-button:before { content: "\f11b"; }
+.flaticon-report:before { content: "\f11c"; }
+.flaticon-optimization:before { content: "\f11d"; }
+.flaticon-link:before { content: "\f11e"; }
+.flaticon-calendar:before { content: "\f11f"; }
+.flaticon-article:before { content: "\f120"; }
+.flaticon-quotation:before { content: "\f121"; }
+.flaticon-chat:before { content: "\f122"; }
+.flaticon-artificial-intelligence:before { content: "\f123"; }
+.flaticon-coding:before { content: "\f124"; }
+    
+    $font-Flaticon-art: "\f100";
+    $font-Flaticon-data: "\f101";
+    $font-Flaticon-web-design: "\f102";
+    $font-Flaticon-marketing: "\f103";
+    $font-Flaticon-ux-design: "\f104";
+    $font-Flaticon-mobile-app: "\f105";
+    $font-Flaticon-animation: "\f106";
+    $font-Flaticon-interior-design: "\f107";
+    $font-Flaticon-video-editing: "\f108";
+    $font-Flaticon-insurance: "\f109";
+    $font-Flaticon-bow: "\f10a";
+    $font-Flaticon-value: "\f10b";
+    $font-Flaticon-vector: "\f10c";
+    $font-Flaticon-graphic-design: "\f10d";
+    $font-Flaticon-pencil: "\f10e";
+    $font-Flaticon-landing-page: "\f10f";
+    $font-Flaticon-sketching: "\f110";
+    $font-Flaticon-test: "\f111";
+    $font-Flaticon-vga-card: "\f112";
+    $font-Flaticon-bullhorn: "\f113";
+    $font-Flaticon-computer: "\f114";
+    $font-Flaticon-isp: "\f115";
+    $font-Flaticon-content-management-system: "\f116";
+    $font-Flaticon-ui: "\f117";
+    $font-Flaticon-seo: "\f118";
+    $font-Flaticon-working-hours: "\f119";
+    $font-Flaticon-time-call: "\f11a";
+    $font-Flaticon-add-button: "\f11b";
+    $font-Flaticon-report: "\f11c";
+    $font-Flaticon-optimization: "\f11d";
+    $font-Flaticon-link: "\f11e";
+    $font-Flaticon-calendar: "\f11f";
+    $font-Flaticon-article: "\f120";
+    $font-Flaticon-quotation: "\f121";
+    $font-Flaticon-chat: "\f122";
+    $font-Flaticon-artificial-intelligence: "\f123";
+    $font-Flaticon-coding: "\f124";

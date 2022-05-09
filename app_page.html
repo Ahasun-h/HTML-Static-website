@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Techno OutSource</title>
+
+    <style>
+        #service_home {
+            background-image: url(images/service_page_bg.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        #app_main {
+            background: #DFF0FC 0 100% repeat-x;
+            position: relative;
+            padding: 100px 0;
+        }
+        
+        .app_main_title {
+            font-size: 40px;
+            color: #484848;
+            font-family: 'Roboto';
+            text-align: center;
+            font-weight: 500;
+        }
+        
+        .app_main_dvider {
+            width: 15%;
+            margin: 14px auto 14px;
+            display: block;
+            background: #2878FF;
+            height: 4px;
+        }
+        
+        #app_main p {
+            width: 60%;
+            margin: auto;
+            display: block;
+            font-family: 'Roboto';
+            font-size: 18px;
+            text-align: center;
+        }
+        
+        .app_main_content {
+            margin-top: 80px;
+        }
+        
+        .app_main_content img {
+            width: 60px;
+            height: 60px;
+            display: block;
+            margin: auto;
+        }
+        
+        .app_main_content_p {
+            text-align: center !important;
+            font-family: 'Roboto' !important;
+            font-size: 18px !important;
+            font-weight: 300;
+            color: #484848;
+            line-height: 1.6;
+            margin-top: 10px !important;
+        }
+        
+        #app_price {
+            background: #fff 0 100% repeat-x;
+            position: relative;
+            padding: 100px 0;
+        }
+        
+        .app_price_h2 {
+            font-size: 28px;
+            font-family: 'Roboto';
+            font-weight: 700;
+            text-align: center;
+            color: #484848;
+        }
+        
+        .app_price_hr {
+            background-color: #2878FF;
+            height: 4px;
+            width: 15%;
+            display: block;
+            margin: 14px auto 14px;
+        }
+        
+        .app_main_p {
+            width: 60%;
+            font-size: 18px;
+            font-family: 'Roboto';
+            font-weight: 300;
+            text-align: center;
+            color: #484848;
+            display: block;
+            margin: auto;
+        }
+        
+        .app_development_stratigy_row {
+            margin-top: 50px;
+        }
+        
+        .app_development_stratigy {
+            padding: 0px 16px;
+            margin: 10px 0px;
+        }
+        
+        .app_development_stratigy_mid {
+            background: #DFF0FC;
+            padding: 28px 10px;
+            border-top: 3px solid #2878FF;
+        }
+        
+        .app_development_stratigy span::before {
+            font-family: Flaticon;
+            font-size: 28px;
+            font-style: normal;
+            margin-left: 0px;
+            text-align: center;
+            display: block;
+            color: #2878FF;
+            margin-bottom: 16px;
+        }
+        
+        .app_development_stratigy_mid_h5 {
+            font-family: 'Roboto';
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+            color: #484848;
+        }
+        
+        .app_development_stratigy_mid_p {
+            font-family: 'Roboto';
+            text-align: center;
+            font-size: 18px;
+            font-weight: 300;
+            color: #484848;
+            margin-top: 12px;
+        }
+        
+        @media (min-width: 200px) and (max-width: 991px) {
+            #app_main p {
+                width: 100%;
+            }
+            #app_price p {
+                width: 100%;
+            }
+        }
+    </style>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/slicknav.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/admission.css" rel="stylesheet">
+    <link href="css/service_page.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="font/flaticon.css">
+
+
+
+</head>
+<!--/head-->
+
+<body onload="screenLoad()" style="scroll-behavior: smooth;">
+
+    <!--? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="img/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--#header-->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-top">
+                    <!-- Left Social -->
+                    <div class="container">
+                        <div class="row">
+                            <ul class="header-social col-6">
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.facebook.com/technooutsource"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google"></i></a></li>
+                            </ul>
+
+                            <ul class="header-email col-6">
+                                <li style="border-left: 1ps solid black;">
+                                    <P>info@technooutsourcebd.com</P>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container logo_part">
+                    <div class="row">
+                        <div class="logo col-4">
+                            <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        </div>
+
+                        <div class="logo col-8">
+                            <ul class="logo_part_ul row">
+                                <li class="col-2"></li>
+                                <li class="col-5">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="flaticon-working-hours"></span>
+                                        </div>
+                                        <div class="col-9">
+                                            <h4 class="sub_header_title">Office Hour</h4>
+                                            <p class="sub_header_p">Sat-Thu:<br>09:00 AM To 5:00 PM</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-5">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="flaticon-time-call"></span>
+                                        </div>
+                                        <div class="col-9">
+                                            <h4 class="sub_header_title">Call Us</h4>
+                                            <p class="sub_header_p">+880 1871415788<br>+880 258 0515 19</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-bottom header-sticky">
+                    <!-- Logo -->
+                    <div class="container">
+                        <div class="menu-wrapper">
+                            <!-- Logo -->
+                            <div class="logo logo2 d-block d-lg-none">
+                                <a href="index.html"><img src="images/logo.png" alt=""></a>
+                            </div>
+                            <!-- Main-menu -->
+                            <div class="main-menu col-12">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li style="display: none;"><a id="nav_a" href="index.html">Home</a></li>
+                                        <li class=""><a id="nav_a" href="index.html#home-slider">Home</a></li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#About_us">About Us</a></li>
+
+                                        <li class=""><a id="nav_a" class="" href="index.html#our_course">Courses</a>
+                                            <ul class="submenu">
+                                                <li><a href="graphic_design.html">Graphic Design</a></li>
+                                                <li><a href="web_design.html">Web Design</a></li>
+                                                <li><a href="Web_Development.html">Web Development</a></li>
+                                                <li><a href="Digital_Marketing.html">Digital Marketing</a></li>
+                                                <li><a href="ui_ux_cource.html">UI/UX Design</a></li>
+                                                <li><a href="app_development.html">App Development</a></li>
+                                                <li><a href="Animation_cource.html">3D Animation</a></li>
+                                                <li><a href="Interior_and_Exterior_Design.html">Interior Design</a></li>
+                                                <li><a href="#">Video Editing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="active"><a id="nav_a" class="" href="index.html#Our-Services">Our Services</a>
+                                            <ul class="submenu">
+                                                <li><a href="web.html">Web Design & Development</a></li>
+                                                <li><a href="graphic.html">Graphic Design</a></li>
+                                                <li><a href="SEO.html">SEO</a></li>
+                                                <li><a href="app_page.html">Application Development</a></li>
+                                                <li><a href="http://cybercombd.com">Hardware Services</a></li>
+                                                <li><a href="marketing.html">Maketing Strategy</a></li>
+                                                <li><a href="Software_Development.html">Software Development</a></li>
+                                                <li><a href="http://www.technooutsource.com/default.asp">ISP Services</a></li>
+                                                <li><a href="Content_Writing.html">Content Management</a></li>
+                                                <li><a href="ui_ux.html">UI/UX</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#portfolio">Portfolio</a></li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#blog">Blog</a></li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#contact">Contact Us</a></li>
+                                        <li class=""><a id="Admission_a" class="" href="admission.html">Admission</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- Header-btn -->
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+
+    <!--#Web Home-->
+    <section id="service_home">
+        <div class="container">
+            <h2 class="service_home_tile"><span>Need a </span>Mobile APP?<br>
+                <span>We have the best </span>Developer<br>
+                <span>for</span> YOU!<br></h2>
+        </div>
+    </section>
+
+    <section id="app_main">
+        <div class="container">
+            <h5 class="app_main_title">Custom Mobile APP Development</h5>
+            <hr class="app_main_dvider">
+            <p class="app_main_p">Our team has a decade-long experience in custom mobile applications development that spans a wide range of industries from retail to healthcare and energy.<br>
+                <br> You want a proactive team who can dive into your business ecosystem. Who can explore the market and understand your needs, requirements and capabilities. Who can build a truly custom strategy and unlock the full potential of mobile
+                technology for your company.<br>
+                <br> This is what custom mobile app development is about. We get to know your business and tailor our application development services to your goals and expectations.
+            </p>
+
+            <h5 class="app_main_title" style="margin-top:52px;">What We Do</h5>
+            <hr class="app_main_dvider">
+            <p class="app_main_p">We provide full-cycle mobile app development services. This includes expert business analysis, design and development of your mobile application from idea to launch, integrating the new product into your infrastructure and providing further
+                optimization and scale-up on demand.<br> We build mobile applications on different platforms using top-notch technologies and proven approaches. Our smartphone app development services include: </p>
+
+            <div class="row app_main_content">
+                <div class="col-xm-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <img src="img/artificial-intelligence.png" />
+                    <p class="app_main_content_p">Leveraging next-gen technologies, intelligent algorithms and modern UI</p>
+                </div>
+
+                <div class="col-xm-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <img src="img/coding.png" />
+                    <p class="app_main_content_p">Design and development of native Android and iOS mobile apps</p>
+                </div>
+
+                <div class="col-xm-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <img src="img/cross-platform.png" />
+                    <p class="app_main_content_p">Leveraging next-gen technologies, intelligent algorithms and modern UI</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="app_price">
+        <div class="container">
+            <h2 class="app_price_h2">Agile Mobile APPS Development</h2>
+            <hr class="app_price_hr">
+            <p class="app_main_p">Working with an experienced mobile applications developer, you get predictably successful results. Using proactive approach and agile process, we make sure your time and investment are optimized at every step of development and you get a digital
+                product that fully meets your requirements and even exceeds your expectations.</p>
+
+            <div class="row app_development_stratigy_row">
+
+                <div class="col-xm-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 app_development_stratigy">
+                    <div class="app_development_stratigy_mid">
+                        <span class="flaticon-chat"></span>
+                        <div class="app_development_stratigy_content">
+                            <h5 class="app_development_stratigy_mid_h5">Consulting & Strategy</h5>
+                            <p class="app_development_stratigy_mid_p">Choose technology and innovation consulting and in-depth market understanding to get a success-oriented mobile strategy for your company.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xm-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 app_development_stratigy">
+                    <div class="app_development_stratigy_mid">
+                        <span class="flaticon-artificial-intelligence"></span>
+                        <div class="app_development_stratigy_content">
+                            <h5 class="app_development_stratigy_mid_h5">Design and UX</h5>
+                            <p class="app_development_stratigy_mid_p">With our help, you are getting user-focused digital tools and omnichannel experiences that fully meet your customers' needs and your business goals.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xm-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 app_development_stratigy">
+                    <div class="app_development_stratigy_mid">
+                        <span class="flaticon-coding"></span>
+                        <div class="app_development_stratigy_content">
+                            <h5 class="app_development_stratigy_mid_h5">Engineering & Delivery</h5>
+                            <p class="app_development_stratigy_mid_p" style="margin-bottom:39px;">We apply iterative approach so you will get digital products at utmost efficiency, quickly address changes and deliver on time and budget.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xm-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 app_development_stratigy">
+                    <div class="app_development_stratigy_mid">
+                        <span class="flaticon-chat"></span>
+                        <div class="app_development_stratigy_content">
+                            <h5 class="app_development_stratigy_mid_h5">QA and Optimization</h5>
+                            <p class="app_development_stratigy_mid_p">We integrate new products into your business and digital infrastructure, provide quality assurance and use performance insights for future optimization.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order_us">
+        <div class="container">
+            <a href="index.html#contact">Order Us</a>
+        </div>
+    </section>
+
+
+    <!--Footer-->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="Follow-Us col-xm-6 col-sm-4 col-lg-2">
+                    <h3 class="footer-title-text">Follow Us</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/technooutsource">
+                                <ion-icon name="logo-facebook" class="socil_icon"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <ion-icon name="logo-twitter" class="socil_icon"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <ion-icon name="logo-youtube" class="socil_icon"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="links col-xm-6 col-sm-4 col-lg-2">
+                    <h3 class="footer-title-text">Links</h3>
+                    <ul class="link-ul">
+                        <li class="link-li">
+                            <a href="index.html" class="links-a">Home</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#About_us" class="links-a">About Us</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#our_course" class="links-a">Courses</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#Our-Services" class="links-a">Our Services</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#portfolio" class="links-a">Portfolio</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#blog" class="links-a">Blogs</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#contact" class="links-a">Contact US</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="admission.html" class="links-a">Admission</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Address col-xm-12 col-sm-4 col-lg-3">
+                    <h3 class="footer-title-text">Address</h3>
+                    <P class="Address-p">BANGLADESH OFFICE ADDRESS: Plot# 10/C, Road# 1/1, Block# Ka/Kha, Section# 6, Dhaka 1216</P>
+                    <p class="Address-p">UK OFFICE ADDRESS: No 1, 284 Barking Road, Eastham, London E6 3BA, United Kingdom.</p>
+                </div>
+                <div class="Map col-sm-12 col-lg-5">
+                    <h3 class="footer-title-text">Map</h3>
+                    <a href="https://goo.gl/maps/Kj7FSzo3uoxNYFqR8"><img src="images/map.png" class="map_image" /></a>
+                    <P class="Map-p">Mirpur, Dhaka, Bangladesh</P>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--CopyRight-->
+    <p class="copyright-text">Copyright and Reserved by ©Techno Outsource Designed by Team TechBCD</p>
+
+    <!-- Scroll Up -->
+    <div id="back-top">
+        <a title="Go to Top" href="#"><i class="fa fa-chevron-up"></i></a>
+    </div>
+
+    <!-- Java script Start -->
+    <script type="text/javascript " src="js/jquery.js "></script>
+    <script type="text/javascript " src="js/bootstrap.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
+    <script type="text/javascript " src="js/lightbox.min.js "></script>
+    <script type="text/javascript " src="js/wow.min.js "></script>
+    <script type="text/javascript " src="js/main.js "></script>
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js "></script>
+    <script type="text/javascript " src="js/jquery.nav.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- ===== IONICONS ===== -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script type="text/javascript " src="js/jquery.slicknav.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // Disable Right Click
+        document.querySelector('body').addEventListener('contextmenu', disableRightClick);
+
+        function disableRightClick(e) {
+            e.preventDefault();
+        }
+
+        $(function() {
+            var navbar = $('.header-sticky');
+            $(window).scroll(function() {
+                if ($(window).scrollTop() <= 40) {
+                    navbar.removeClass('navbar-scroll');
+                } else {
+                    navbar.addClass('navbar-scroll');
+                }
+            });
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,968 @@
+@media (max-width: 1366px) {
+    .nav-menu .drop-down .drop-down ul {
+        left: -90%;
+    }
+    .nav-menu .drop-down .drop-down:hover>ul {
+        left: -100%;
+    }
+    .nav-menu .drop-down .drop-down>a:after {
+        content: "\ea9d";
+    }
+}
+
+
+/*md only*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .col-md-4.portfolio-item {
+        width: 33%;
+    }
+    /******* Home **********/
+    #home-slider {
+        padding: 36px 0 176px 0;
+    }
+    #home-slider h1 {
+        font-size: 44px;
+    }
+    #home-slider .slider-bg {
+        width: 76%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 21%;
+    }
+    #home-slider .slide-text p {
+        font-size: 18px;
+        text-align: left;
+    }
+    /******* About Us Section **********/
+    #About_us {
+        padding: 200px 0 62px 0;
+    }
+    .about_us_text h3 {
+        padding-top: 64px;
+    }
+    .about_us_text h1 {
+        font-size: 44px;
+    }
+    .about_us_text p {
+        font-size: 14px;
+    }
+    .about_us_text a {
+        font-size: 14px;
+    }
+    #About_us .Persona {
+        width: 42%;
+        left: 29%;
+        top: 34%;
+        position: absolute;
+    }
+    #About_us .wheel_three {
+        width: 17%;
+        position: absolute;
+        right: 33%;
+        top: 24%;
+    }
+    #About_us .Wheel_one {
+        width: 9%;
+        position: absolute;
+        right: 24%;
+        top: 37%;
+    }
+    #About_us .wheel_two {
+        width: 12%;
+        position: absolute;
+        right: 64%;
+        top: 56%;
+    }
+    /******* Our-Cource **********/
+    #our_course h3 {
+        padding-top: 64px;
+    }
+    /******* Our-Services **********/
+    #Our-Services {
+        padding: 62px 0;
+    }
+    #Our-Services h3 {
+        padding-top: 64px;
+    }
+    #Our-Services h1 {
+        font-size: 44px;
+    }
+    /******* portfolio **********/
+    .portfolio_title_h3 {
+        padding-top: 64px;
+    }
+    .portfolio_menu ul li a {
+        font-size: 16px;
+        padding: 12px 12px;
+    }
+    /******* News_Events **********/
+    #News_Events {
+        padding: 62px 0;
+    }
+    #News_Events h3 {
+        padding-top: 64px;
+    }
+    /******* blog **********/
+    #blog {
+        padding: 62px 0;
+    }
+    #blog h3 {
+        padding-top: 62px;
+    }
+    /******* contact **********/
+    #contact {
+        padding: 62px 0px;
+    }
+    .cource_content_extand {
+        padding-top: 10px;
+    }
+    .cource_content_extand {
+        padding-left: 9px;
+        padding-top: 0px;
+    }
+}
+
+
+/*sm only*/
+
+@media (min-width: 779px) and (max-width: 991px) {
+    .header-top {
+        display: none;
+    }
+    .logo_part {
+        display: none;
+    }
+    .main-menu {
+        display: none;
+    }
+    .col-sm-4.portfolio-item {
+        width: 33%;
+    }
+    .navbar-scroll {
+        position: fixed;
+        width: 100%;
+        margin-top: 0px;
+        z-index: 100000;
+        background: blue;
+    }
+    #home-slider {
+        top: 0px;
+        padding: 0px 0 150px 0;
+        background-size: 100% 210%;
+    }
+    #home-slider h1 {
+        font-size: 40px;
+        text-align: center;
+        padding: 0px 0 10px 0;
+        font-weight: 700;
+    }
+    #home-slider p {
+        font-size: 18px;
+        text-align: center;
+    }
+    #home-slider .btn-common {
+        margin: auto;
+        display: block;
+        width: 26%;
+    }
+    #home-slider .slider-part-two {
+        bottom: -18%;
+    }
+    #home-slider .slider-part-three {
+        bottom: -12%;
+    }
+    #home-slider .slider-part-one {
+        bottom: -5%;
+    }
+    #home-slider .slide-text p {
+        font-size: 18px;
+        text-align: center;
+    }
+    #About_us {
+        padding: 120px 0 20px 0;
+    }
+    .about_us_images {
+        order: 2;
+    }
+    #About_us .about_us_bg {
+        width: 80%;
+        margin-top: 0%;
+    }
+    #About_us .wheel_three {
+        width: 15%;
+        right: 38%;
+        top: 3%;
+    }
+    #About_us .Wheel_one {
+        right: 29%;
+        top: 29%;
+    }
+    #About_us .wheel_two {
+        right: 66%;
+        top: 61%;
+    }
+    #About_us .Persona {
+        width: 40%;
+        top: 19%;
+    }
+    .about_us_text {
+        order: 1;
+        margin-top: 44px;
+    }
+    .about_us_text h3 {
+        font-size: 22px;
+        display: block;
+        margin: auto;
+        padding-top: 56px;
+    }
+    .about_us_text h1 {
+        font-size: 40px;
+        padding: 11px 0 0px 0px;
+        text-align: center;
+    }
+    .about_us_text p {
+        font-size: 16px;
+        padding: 16px 0 0 0;
+        text-align: center;
+    }
+    .about_us_text a {
+        text-align: center;
+        display: block;
+    }
+    .tabs_image img {
+        height: auto;
+    }
+    /* our_course */
+    #our_course h3 {
+        font-size: 22px;
+        padding-top: 56px;
+    }
+    #Our-Services {
+        padding: 62px 0;
+    }
+    #Our-Services h3 {
+        font-size: 22px;
+        padding-top: 56px;
+    }
+    #Our-Services h1 {
+        font-size: 40px;
+        margin-top: 5px;
+        padding: 6px 0 0 0px;
+    }
+    /******* portfolio **********/
+    .portfolio_title_h3 {
+        font-size: 22px;
+        padding-top: 56px;
+    }
+    .portfolio_menu ul li a {
+        font-size: 16px;
+        padding: 10px 12px;
+    }
+    #News_Events {
+        padding: 62px 0;
+    }
+    #News_Events h3 {
+        padding-top: 56px;
+        text-align: left;
+        padding-left: 12px;
+    }
+    #News_Events .cart_header_title {
+        padding: 50px 0px 14px 0px;
+    }
+    #News_Events #news_slider {
+        height: 341px;
+    }
+    #blog {
+        padding: 40px 0 58px 0;
+    }
+    #blog .blog_slider_items {
+        height: 300px;
+    }
+    .blog_slider_text h5 {
+        font-size: 12px;
+    }
+    .blog_slider_text h2 {
+        font-size: 20px;
+    }
+    #blog h3 {
+        padding-top: 52px;
+    }
+    .blog_slider_text h4 {
+        font-size: 16px;
+    }
+    .blog_slider_text h6 {
+        font-size: 15px;
+    }
+    #spical_blog {
+        padding: 22px 0 40px 0px;
+    }
+    .cource_content_extand {
+        padding-top: 10px;
+    }
+}
+
+/* xs */
+
+@media (min-width: 420px) and (max-width: 778px) {
+    .header-top {
+        display: none;
+    }
+    .logo_part {
+        display: none;
+    }
+    .main-menu {
+        display: none;
+    }
+    .col-sm-4.portfolio-item {
+        width: 33%;
+    }
+    .navbar-scroll {
+        position: fixed;
+        width: 100%;
+        margin-top: 0px;
+        z-index: 100000;
+        background: blue;
+    }
+    #header .logo img {
+        height: 38px;
+        margin-top: 8px;
+        width: 124px;
+    }
+    #home-slider {
+        top: 0px;
+        padding: 0px 0 70px 0;
+        background-size: 100% 210%;
+    }
+    #home-slider h1 {
+        font-size: 24px;
+        text-align: center;
+        margin-top: 66px;
+        margin-bottom: 20px;
+    }
+    #home-slider .btn-common {
+        margin: auto;
+        display: block;
+        width: 32%;
+        font-size: 14px;
+    }
+    #home-slider .slider-bg {
+        width: 70%;
+    }
+    #home-slider .slider-part-two {
+        width: 23%;
+        right: 26%;
+        bottom: -11%;
+    }
+    #home-slider .slider-part-three {
+        width: 25%;
+        right: 47%;
+        bottom: -6%;
+    }
+    #home-slider .slider-part-one {
+        width: 15%;
+        left: 20%;
+        bottom: 0%;
+    }
+    #home-slider .slide-text p {
+        font-size: 18px;
+        text-align: center;
+    }
+    #About_us {
+        padding: 80px 0 52px 0;
+    }
+    .about_us_images {
+        order: 2;
+    }
+    .about_us_text {
+        order: 1;
+    }
+    .about_us_text h3 {
+        font-size: 14px;
+        margin: auto;
+        border-left: 45px solid #2878FF;
+        padding-top: 52px;
+    }
+    .about_us_text h1 {
+        padding: 13px 0 10px 58px;
+        font-size: 24px;
+    }
+    .about_us_text p {
+        font-size: 12px;
+        padding: 8px 0 0 0;
+        text-align: center;
+    }
+    .about_us_text a {
+        font-size: 12px;
+        padding: 12px 0 0 0;
+        text-align: center;
+        display: block;
+    }
+    #About_us .about_us_bg {
+        width: 75%;
+        margin-top: 15%;
+    }
+    #About_us .Persona {
+        width: 38%;
+        left: 32%;
+        top: 34%;
+    }
+    #About_us .wheel_three {
+        width: 13%;
+        right: 36%;
+        top: 24%;
+    }
+    #About_us .Wheel_one {
+        width: 8%;
+        right: 27%;
+        top: 37%;
+    }
+    #About_us .wheel_two {
+        width: 11%;
+        right: 62%;
+        top: 65%;
+    }
+    .tabs_image img {
+        height: auto !important;
+    }
+    /* our_course */
+    #our_course h3 {
+        width: 152px;
+        font-size: 14px;
+        margin: 0px auto 30px;
+        border-left: 45px solid #2878FF;
+        padding-top: 52px;
+    }
+    #Our-Services {
+        padding: 40px 0;
+    }
+    #Our-Services h3 {
+        width: 152px;
+        font-size: 14px;
+        margin: auto;
+        border-left: 45px solid #2878FF;
+        padding-top: 52px;
+    }
+    #Our-Services h1 {
+        padding: 13px 0 10px 58px;
+        font-size: 24px;
+    }
+    .services__items {
+        margin-top: 12px;
+    }
+    .services__items .col-xl-3 {
+        width: 50%;
+    }
+    /******* portfolio **********/
+    .portfolio_title_h3 {
+        width: 152px;
+        font-size: 14px;
+        margin: 0px auto 30px;
+        border-left: 45px solid #2878FF;
+        padding-top: 52px;
+    }
+    .portfolio_menu ul li a {
+        font-size: 16px;
+        padding: 10px 12px;
+    }
+    .Countdown_h1 {
+        font-size: 18px;
+    }
+    .Countdown_h2 {
+        font-size: 34px;
+    }
+    .Countdown_h3 {
+        font-size: 16px;
+    }
+
+    #News_Events {
+        padding: 52px 0;
+    }
+    #News_Events h3 {
+        width: 182px;
+        font-size: 14px;
+        margin: auto;
+        border-left: 45px solid #2878FF;
+        padding-top: 52px;
+    }
+    #News_Events .cart_header_title {
+        font-size: 12px;
+        padding: 42px 0px 6px 0px;
+    }
+    #News_Events #news_slider {
+        height: 341px;
+    }
+    #News_Events .event_card_header_title {
+        font-size: 12px;
+        padding: 42px 0px 6px 0px;
+    }
+    #News_Events .event-card-body h5 {
+        height: 40px;
+        font-size: 12px;
+        padding: 12px 13px 0px 13px;
+    }
+    #blog {
+        padding: 30px 0 52px 0px;
+    }
+    #blog h3 {
+        font-size: 14px;
+        margin: 0px auto 20px;
+        border-left: 45px solid #2878FF;
+        padding-top: 52px;
+    }
+    #blog .blog_slider {
+        margin-top: 12px;
+    }
+    #blog .blog_slider_items {
+        height: 228px;
+    }
+    .blog_slider_text h5 {
+        font-size: 12px;
+        padding: 30px 0px 0px 0px;
+    }
+    .blog_slider_text h2 {
+        font-size: 14px;
+        padding: 4px 0px 4px 0px;
+    }
+    .blog_slider_text h4 {
+        font-size: 12px;
+        padding: 0px 0px 0px 0px;
+    }
+    .blog_slider_text h6 {
+        font-size: 12px;
+    }
+    .blog_text {
+        top: 0px;
+    }
+    .blog_text h4 {
+        font-size: 14px;
+        text-align: center;
+    }
+    .blog_text p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .blog_feature_images {
+        top: 0px;
+    }
+    .blog_feature_images_item {
+        height: 222px;
+    }
+    .blog_feature_images_item h4 {
+        font-size: 10px;
+    }
+    .blog_feature_images_item_text h6 {
+        font-size: 12px;
+    }
+    .blog_feature_images_item_text h5 {
+        font-size: 14px;
+    }
+    #spical_blog {
+        padding: 0px 0 52px 0px;
+    }
+    #contact {
+        padding: 34px 0 34px 0;
+    }
+    #contact .row {
+        padding: 0px 22px;
+    }
+    #contact .contact-header h1 {
+        font-size: 30px;
+    }
+    #contact .contact-header h4 {
+        font-size: 14px;
+    }
+    .contact-form-header,
+    .cotact_information_header {
+        font-size: 16px;
+    }
+    .contact-form {
+        padding: 64px 42px;
+    }
+    .submit-btn {
+        font-size: 14px;
+        padding: 10px 36px;
+    }
+    .cotact_information_text {
+        font-size: 12px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .cotact_information {
+        padding: 43px 42px;
+    }
+    #footer {
+        padding: 56px 25px;
+    }
+    .footer-title-text {
+        font-size: 14px;
+    }
+    #footer .links {
+        margin-bottom: 10px;
+    }
+    .links-a {
+        font-size: 10px;
+    }
+    .Address-p {
+        font-size: 12px;
+    }
+    .copyright-text {
+        font-size: 10px;
+    }
+    .cource_content_extand {
+        padding-top: 10px;
+    }
+}
+
+@media (min-width: 419px) and (max-width: 575px) {
+    .portfolio_item_image {
+        height: 178px;
+        width: 50%;
+    }
+}
+
+
+/* mobile */
+
+@media (min-width: 100px) and (max-width: 419px) {
+    .header-top {
+        display: none;
+    }
+    .logo_part {
+        display: none;
+    }
+    .main-menu {
+        display: none;
+    }
+    .col-sm-4.portfolio-item {
+        width: 33%;
+    }
+    .navbar-scroll {
+        position: fixed;
+        width: 100%;
+        margin-top: 0px;
+        z-index: 100000;
+        background: blue;
+    }
+    #home-slider {
+        top: 0px;
+        padding: 0px 0 70px 0;
+        background-size: 100% 210%;
+    }
+    #home-slider h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    #home-slider p {
+        font-size: 12px;
+        text-align: center;
+    }
+    #home-slider .btn-common {
+        font-size: 10px;
+        margin: auto;
+        display: block;
+        width: 36%;
+        margin-top: 26px;
+    }
+    #home-slider .slider-part-two {
+        width: 28%;
+        position: absolute;
+        right: 22%;
+        bottom: -12%;
+    }
+    #home-slider .slider-part-three {
+        width: 29%;
+        position: absolute;
+        right: 46%;
+        bottom: -6%;
+    }
+    #home-slider .slider-part-one {
+        width: 18%;
+        position: absolute;
+        left: 16%;
+        bottom: 5%;
+    }
+    #home-slider .slide-text p {
+        text-align: center;
+    }
+    #About_us {
+        padding: 92px 0 34px 0;
+    }
+    .about_us_images {
+        order: 2;
+    }
+    .about_us_text {
+        order: 1;
+    }
+    .about_us_text h3 {
+        font-size: 16px;
+        border-left: 36px solid #2878FF;
+        width: 195px;
+        padding-top: 38px;
+        margin: auto;
+        display: block;
+    }
+    .about_us_text h1 {
+        font-size: 28px;
+        padding: 0 0 0px 0px;
+        font-size: 26px;
+        text-align: center;
+    }
+    .about_us_text p {
+        font-size: 12px;
+        padding: 6px 0 0 0;
+        text-align: center;
+    }
+    .about_us_text a {
+        font-size: 12px;
+        padding: 6px 0 0 0;
+        display: block;
+        text-align: center;
+    }
+    #our_course h3 {
+        font-size: 16px;
+        border-left: 36px solid #2878FF;
+        width: 195px;
+        padding-top: 38px;
+        margin: 0px auto 30px;
+        display: block;
+        width: 158px;
+    }
+    #Our-Services {
+        padding: 53px 0;
+    }
+    #Our-Services h3 {
+        font-size: 16px;
+        border-left: 36px solid #2878FF;
+        width: 195px;
+        padding-top: 38px;
+        margin: auto;
+        display: block;
+        width: 158px;
+    }
+    #Our-Services h1 {
+        padding: 0 0 0px 0px;
+        font-size: 26px;
+        margin-top: 18px;
+        text-align: center;
+    }
+    .Our-Services-Paragraph {
+        font-size: 12px;
+        padding: 6px 0 0 0;
+        text-align: center;
+    }
+    .services__items {
+        margin-top: 12px;
+    }
+    .services__items .col-xl-3 {
+        width: 50%;
+    }
+    .services__items_content {
+        margin: 40px 0;
+    }
+    .services__items_content {
+        height: 148px;
+        padding: 39px 8px;
+    }
+    .services__items_content_mid {
+        height: 168px;
+    }
+    .services__items_content {
+        margin: 18px 0;
+    }
+    .services__items_content img {
+        width: 36px;
+    }
+    .services__items_content h4 {
+        font-size: 12px;
+    }
+    /******* portfolio **********/
+    .portfolio_title_h3 {
+        font-size: 16px;
+        border-left: 36px solid #2878FF;
+        width: 195px;
+        padding-top: 38px;
+        margin: auto;
+        display: block;
+        width: 158px;
+    }
+    .portfolio_menu ul li a {
+        font-size: 12px;
+        padding: 10px 8px;
+    }
+    .portfolio_item_image {
+        height: 138px;
+        width: 50%;
+    }
+    #News_Events {
+        padding: 32px 0;
+    }
+    #News_Events h3 {
+        font-size: 16px;
+        border-left: 36px solid #2878FF;
+        width: 195px;
+        padding-top: 38px;
+        margin: auto;
+        display: block;
+        width: 158px;
+    }
+    #News_Events .cart_header_title {
+        font-size: 14px;
+        padding: 20px 0px 6px 0px;
+    }
+    #News_Events #news_slider {
+        height: 341px;
+    }
+    #News_Events .event_card_header_title {
+        font-size: 14px;
+        padding: 20px 0px 6px 0px;
+    }
+    #News_Events .event-card-body h5 {
+        font-size: 9px;
+        padding: 12px 12px 0px 12px;
+    }
+    #blog {
+        padding: 34px 0;
+    }
+    #blog h3 {
+        font-size: 16px;
+        border-left: 36px solid #2878FF;
+        width: 195px;
+        padding-top: 38px;
+        margin: auto;
+        display: block;
+        width: 158px;
+    }
+    #blog .blog_slider {
+        margin-top: 10px;
+    }
+    #blog .blog_slider_items {
+        height: 354px;
+    }
+    #blog .blog_slider_image {
+        width: 100%;
+        height: 168px;
+    }
+    #blog .blog_slider_text {
+        width: 100%;
+        height: 186px;
+    }
+    .blog_slider_text h5 {
+        font-size: 12px;
+        padding: 32px 0px 0px 0px;
+    }
+    .blog_slider_text h2 {
+        font-size: 12px;
+        padding: 5px 0px 4px 0px;
+    }
+    .blog_slider_text h4 {
+        font-size: 14px;
+        padding: 0px 0px 0px 0px;
+        line-height: 0;
+    }
+    .blog_slider_text h6 {
+        font-size: 12px;
+        padding: 0px 0px 2px 0px;
+    }
+    .blog_text {
+        margin-top: 12px;
+    }
+    .blog_text h4 {
+        font-size: 14px;
+        text-align: center;
+    }
+    .blog_text p {
+        font-size: 14px;
+        text-align: center;
+    }
+    .blog_feature_images {
+        top: 18px;
+    }
+    .blog_feature_images_item {
+        height: 195px;
+    }
+    .blog_feature_images_item h4 {
+        padding: 8px 21px;
+        font-size: 8px;
+    }
+    .blog_feature_images_item_text {
+        padding: 24px 8px;
+    }
+    .blog_feature_images_item_text h6 {
+        font-size: 12px;
+    }
+    .blog_feature_images_item_text h5 {
+        font-size: 14px;
+    }
+    #spical_blog {
+        padding: 22px 0 40px 0px;
+    }
+    #contact {
+        padding: 100px 0 2px 0;
+    }
+    #contact .contact-header h1 {
+        padding: 0;
+        font-size: 26px;
+        text-align: center;
+    }
+    #contact .contact-header h4 {
+        font-size: 14px;
+    }
+    .contact-form {
+        padding: 50px 30px;
+    }
+    .contact-form-header {
+        font-size: 18px;
+    }
+    .submit-btn {
+        font-size: 12px;
+        padding: 12px 32px;
+    }
+    .cotact_information {
+        padding: 50px 30px;
+    }
+    .cotact_information_text {
+        font-size: 14px;
+        text-align: center;
+        top: 12px;
+    }
+    #footer {
+        padding: 68px 0;
+    }
+    #footer .links {
+        margin-bottom: 16px;
+    }
+    .links-a {
+        font-size: 12px;
+    }
+    #footer .Address {
+        margin-bottom: 12px;
+    }
+    .Address-p {
+        font-size: 12px;
+    }
+    #CopyRight {
+        height: 84px;
+    }
+    .copyright-text {
+        margin-top: 0px;
+        font-size: 14px;
+    }
+    .cource_content_extand {
+        padding-top: 10px;
+    }
+    .admission_open {
+        width: 90%;
+        padding: 12px 30px 12px 18px;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #company-information img {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {}

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Techno OutSource</title>
+
+    <style>
+        #service_home {
+            background-image: url(images/service_page_bg.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        #graphic_main {
+            background: #fff 0 100% repeat-x;
+            position: relative;
+            padding: 100px 0;
+        }
+        
+        .graphic_main_h3 {
+            font-size: 30px;
+            text-align: center;
+            font-family: 'Roboto';
+            font-weight: 700;
+            color: #54595f;
+        }
+        
+        .graphic_main_p {
+            font-size: 18px;
+            text-align: justify;
+            font-family: 'Roboto';
+            font-weight: 300;
+            color: #54595f;
+            margin-top: 28px;
+        }
+        
+        .accordion>.card>.card-header {
+            margin-bottom: 16px !important;
+            border: 1px solid #484848;
+            background: #fff;
+            border-radius: 6px !important;
+        }
+        
+        .accordion>.card:not(:last-of-type) {
+            border: 0px solid transparent;
+        }
+        
+        .accordion_title {
+            font-size: 18px;
+            font-weight: 300;
+            color: #54595f;
+            padding: 8px 0px;
+        }
+        
+        .accordion_p {
+            font-family: 'Roboto';
+            font-size: 18px;
+            font-weight: 300;
+            color: #54595f;
+            text-align: justify;
+        }
+        
+        .card {
+            border: 0px solid transparent !important;
+        }
+    </style>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/slicknav.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/admission.css" rel="stylesheet">
+    <link href="css/service_page.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="font/flaticon.css">
+</head>
+<!--/head-->
+
+<body onload="screenLoad()" style="scroll-behavior: smooth;">
+
+    <!--? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="img/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--#header-->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-top">
+                    <!-- Left Social -->
+                    <div class="container">
+                        <div class="row">
+                            <ul class="header-social col-6">
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.facebook.com/technooutsource"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google"></i></a></li>
+                            </ul>
+
+                            <ul class="header-email col-6">
+                                <li style="border-left: 1ps solid black;">
+                                    <P>info@technooutsourcebd.com</P>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container logo_part">
+                    <div class="row">
+                        <div class="logo col-4">
+                            <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        </div>
+
+                        <div class="logo col-8">
+                            <ul class="logo_part_ul row">
+                                <li class="col-2"></li>
+                                <li class="col-5">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="flaticon-working-hours"></span>
+                                        </div>
+                                        <div class="col-9">
+                                            <h4 class="sub_header_title">Office Hour</h4>
+                                            <p class="sub_header_p">Sat-Thu:<br>09:00 AM To 5:00 PM</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-5">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="flaticon-time-call"></span>
+                                        </div>
+                                        <div class="col-9">
+                                            <h4 class="sub_header_title">Call Us</h4>
+                                            <p class="sub_header_p">+880 1871415788<br>+880 258 0515 19</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-bottom header-sticky">
+                    <!-- Logo -->
+                    <div class="container">
+                        <div class="menu-wrapper">
+                            <!-- Logo -->
+                            <div class="logo logo2 d-block d-lg-none">
+                                <a href="index.html"><img src="images/logo.png" alt=""></a>
+                            </div>
+                            <!-- Main-menu -->
+                            <div class="main-menu col-12">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li style="display: none;"><a id="nav_a" href="index.html">Home</a></li>
+                                        <li class=""><a id="nav_a" href="index.html#home-slider">Home</a></li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#About_us">About Us</a></li>
+
+                                        <li class=""><a id="nav_a" class="" href="index.html#our_course">Courses</a>
+                                            <ul class="submenu">
+                                                <li><a href="graphic_design.html">Graphic Design</a></li>
+                                                <li><a href="web_design.html">Web Design</a></li>
+                                                <li><a href="Web_Development.html">Web Development</a></li>
+                                                <li><a href="Digital_Marketing.html">Digital Marketing</a></li>
+                                                <li><a href="ui_ux_cource.html">UI/UX Design</a></li>
+                                                <li><a href="app_development.html">App Development</a></li>
+                                                <li><a href="Animation_cource.html">3D Animation</a></li>
+                                                <li><a href="Interior_and_Exterior_Design.html">Interior Design</a></li>
+                                                <li><a href="#">Video Editing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="active"><a id="nav_a" class="" href="index.html#Our-Services">Our Services</a>
+                                            <ul class="submenu">
+                                                <li><a href="web.html">Web Design & Development</a></li>
+                                                <li><a href="graphic.html">Graphic Design</a></li>
+                                                <li><a href="SEO.html">SEO</a></li>
+                                                <li><a href="app_page.html">Application Development</a></li>
+                                                <li><a href="http://cybercombd.com">Hardware Services</a></li>
+                                                <li><a href="marketing.html">Maketing Strategy</a></li>
+                                                <li><a href="Software_Development.html">Software Development</a></li>
+                                                <li><a href="http://www.technooutsource.com/default.asp">ISP Services</a></li>
+                                                <li><a href="Content_Writing.html">Content Management</a></li>
+                                                <li><a href="ui_ux.html">UI/UX</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#portfolio">Portfolio</a></li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#blog">Blog</a></li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#contact">Contact Us</a></li>
+                                        <li class=""><a id="Admission_a" class="" href="admission.html">Admission</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- Header-btn -->
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+
+
+
+    <!--#Web Home-->
+    <section id="service_home">
+        <div class="container">
+            <h2 class="service_home_tile"><span>Great </span>Design<br> Brings <span>Great</span> Impressions!</h2>
+        </div>
+    </section>
+
+    <section id="graphic_main">
+        <div class="container">
+            <h3 class="graphic_main_h3">What is graphic design about?</h3>
+            <p class="graphic_main_p">First of all, we need to know what is graphic design, also known as communication design, graphic design can take physical form as business card or virtual form as a banner for a website, graphic design is the art of projecting ideas and messages
+                in a visual way through visual and text content with images, words or graphics, also the purpose of graphic design can be everything as for commercial purposes for any company or business, educational for colleges or educational organizations,
+                cultural for museums, movies, or music and political to transmit any message or idea.</p>
+            <p class="graphic_main_p">Now, that we already know a short definition of what is Graphic Design, we can talk about why is important graphic design for a company or any business, as we mentioned design is the art of transmit ideas, and for a company it is important
+                to transmit the philosophy of their brand and let know their future clients why they need their product.</p>
+            <p class="graphic_main_p">Graphic Design is very important at the beginning of any company or business, because the logo design will be one of the most recognizable element from your brand and you will want that people will known your brand and your philosophy only
+                seeing your logo, you also will like to create connection between all the graphic elements of your brand to make it more credibility and professional.</p>
+            <p class="graphic_main_p">In TechnoOutSourceBD we can help you to reach your future clients a feel attracted to your brand through professional, clean and powerful design.</p>
+            <p class="graphic_main_p">What services you can find in graphic design</p>
+
+            <div class="row">
+                <div class="accordion col-xm-12 col-sm-12 col-md-8 col-lg-6 col-xl-6">
+                    <!--Accordion wrapper-->
+                    <div class="accordion md-accordion accordion-2" id="accordionEx7" role="tablist" aria-multiselectable="true">
+                        <!-- Accordion card -->
+                        <div class="card">
+                            <!-- Card header -->
+                            <div class="card-header rgba-stylish-strong z-depth-1 mb-1" role="tab" id="heading2">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#one" aria-expanded="false" aria-controls="collapse2">
+                                    <h5 class="mb-0 accordion_title">
+                                        <i class="fa fa-caret-right"></i> Editorial Design
+                                    </h5>
+                                </a>
+                            </div>
+                            <!-- Card body -->
+                            <div id="one" class="collapse" role="tabpanel" aria-labelledby="heading2" data-parent="#accordionEx7">
+                                <div class="card-body mb-1 rgba-grey-light white-text">
+                                    <p class="accordion_p">Editorial design is a graphic design field that combines clever compositions, editorial layout and creative typography, these all elements mixed makes a huge role in the way we want to share information to your audience,
+                                        in Zeka Design we focus on creating a clean design with powerful message to make your future clients more easy to engage with your product.<br><br>The editorial design field we care of Book Cover Design, Magazine
+                                        layouts design and creating powerful catalogue to showcase your products in the best way according to your branding design.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion card -->
+                        <!-- Accordion card -->
+                        <div class="card">
+                            <!-- Card header -->
+                            <div class="card-header rgba-stylish-strong z-depth-1 mb-1" role="tab" id="heading2">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#two" aria-expanded="false" aria-controls="collapse2">
+                                    <h5 class="mb-0 accordion_title">
+                                        <i class="fa fa-caret-right"></i> Advertising Design
+                                    </h5>
+                                </a>
+                            </div>
+                            <!-- Card body -->
+                            <div id="two" class="collapse" role="tabpanel" aria-labelledby="heading2" data-parent="#accordionEx7">
+                                <div class="card-body mb-1 rgba-grey-light white-text">
+                                    <p class="accordion_p">Advertising Design is a way of graphic design focused on help your company to sell your products or services , advertising design is a mix between graphic design and marketing to create the perfect graphic ad to create
+                                        more engagement with your niche customers.<br><br>As advertising design focus is to let know your future clients about your products and persuade them to buy your product or service, is very important the marketing
+                                        approach in the design and make it look fun and professional including the benefits to your customer about buying your product, and all of these is made by creating the right sales tactic and marketing plan.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion card -->
+                        <!-- Accordion card -->
+                        <div class="card">
+                            <!-- Card header -->
+                            <div class="card-header rgba-stylish-strong z-depth-1 mb-1" role="tab" id="heading3">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#three" aria-expanded="false" aria-controls="collapse3">
+                                    <h5 class="mb-0 accordion_title">
+                                        <i class="fa fa-caret-right"></i> Corporate Design
+                                    </h5>
+                                </a>
+                            </div>
+                            <!-- Card body -->
+                            <div id="three" class="collapse" role="tabpanel" aria-labelledby="heading3" data-parent="#accordionEx7">
+                                <div class="card-body mb-1 rgba-grey-light white-text">
+                                    <p class="accordion_p">A corporate design is all the graphic elements involved in a brand to make it work all together and let your clients recognize better your company, that elements includes the logo design, the name of the company or
+                                        institution, envelopes, forms, folders, broucheers and all the elements used by your company inside your office and for your clients.<br><br> It’s very important for any company create a good Corporate design, this
+                                        make your brand stronger and look professional, using the same color palette, patterns and your unique design, all these elements need to transmit your mission and ideas in the best way possible.<br><br>You want
+                                        that your brand logo transmit your philosophy and reach your potential clients with strong and powerful graphics to keep growing through the years with great Corporate Design.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion card -->
+                        <!-- Accordion card -->
+                        <div class="card">
+                            <!-- Card header -->
+                            <div class="card-header rgba-stylish-strong z-depth-1 mb-1" role="tab" id="heading3">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#four" aria-expanded="false" aria-controls="collapse3">
+                                    <h5 class="mb-0 accordion_title">
+                                        <i class="fa fa-caret-right"></i> Design For Events
+                                    </h5>
+                                </a>
+                            </div>
+                            <!-- Card body -->
+                            <div id="four" class="collapse" role="tabpanel" aria-labelledby="heading3" data-parent="#accordionEx7">
+                                <div class="card-body mb-1 rgba-grey-light white-text">
+                                    <p class="accordion_p">If you are planning to make a event, is very important to take care of the design of every elements, all the elements related to your event needs to work together to transmit the vibe and the ambient of your event,
+                                        and you need to target your audience correctly to engage with them and make them want to go to your event.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion card -->
+                    </div>
+                    <!--/.Accordion wrapper-->
+
+
+                </div>
+                <div class="accordion col-xm-12 col-sm-12 col-md-4 col-lg-6 col-xl-6">
+                    <!--Accordion wrapper-->
+                    <div class="accordion md-accordion accordion-2" id="accordionEx7" role="tablist" aria-multiselectable="true">
+                        <!-- Accordion card -->
+                        <div class="card">
+                            <!-- Card header -->
+                            <div class="card-header rgba-stylish-strong z-depth-1 mb-1" role="tab" id="heading2">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#six" aria-expanded="false" aria-controls="collapse2">
+                                    <h5 class="mb-0 accordion_title">
+                                        <i class="fa fa-caret-right"></i> Logo Design
+                                    </h5>
+                                </a>
+                            </div>
+                            <!-- Card body -->
+                            <div id="six" class="collapse" role="tabpanel" aria-labelledby="heading2" data-parent="#accordionEx7">
+                                <div class="card-body mb-1 rgba-grey-light white-text">
+                                    <p class="accordion_p">Every brand wants to be recognized and keep up during the time, that is why is very important to create a great logo to communicate the philosophy and the idea of the brand.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion card -->
+                        <!-- Accordion card -->
+                        <div class="card">
+                            <!-- Card header -->
+                            <div class="card-header rgba-stylish-strong z-depth-1 mb-1" role="tab" id="heading2">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#seven" aria-expanded="false" aria-controls="collapse2">
+                                    <h5 class="mb-0 accordion_title">
+                                        <i class="fa fa-caret-right"></i> Rebranding
+                                    </h5>
+                                </a>
+                            </div>
+                            <!-- Card body -->
+                            <div id="seven" class="collapse" role="tabpanel" aria-labelledby="heading2" data-parent="#accordionEx7">
+                                <div class="card-body mb-1 rgba-grey-light white-text">
+                                    <p class="accordion_p">The time goes by and the trends change, and for every brand is important to stay on the eye that is why is important to make a rebranding, to keep the brand modern and fresh through the years.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion card -->
+                        <!-- Accordion card -->
+                        <div class="card">
+                            <!-- Card header -->
+                            <div class="card-header rgba-stylish-strong z-depth-1 mb-1" role="tab" id="heading3">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#eight" aria-expanded="false" aria-controls="collapse3">
+                                    <h5 class="mb-0 accordion_title">
+                                        <i class="fa fa-caret-right"></i> Naming
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="eight" class="collapse" role="tabpanel" aria-labelledby="heading3" data-parent="#accordionEx7">
+                                <div class="card-body mb-1 rgba-grey-light white-text">
+                                    <p class="accordion_p">Your brand needs to be recognized that is why is important to have a name that stay in the mind of the future clients and the verbal identity is the way the brand describes itself and its products.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion card -->
+                        <!-- Accordion card -->
+                        <div class="card">
+                            <!-- Card header -->
+                            <div class="card-header rgba-stylish-strong z-depth-1 mb-1" role="tab" id="heading3">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#five" aria-expanded="false" aria-controls="collapse3">
+                                    <h5 class="mb-0 accordion_title">
+                                        <i class="fa fa-caret-right"></i> Design For Web
+                                    </h5>
+                                </a>
+                            </div>
+                            <!-- Card body -->
+                            <div id="five" class="collapse" role="tabpanel" aria-labelledby="heading3" data-parent="#accordionEx7">
+                                <div class="card-body mb-1 rgba-grey-light white-text">
+                                    <p class="accordion_p">If you are looking for give your web site design a unique look and more personality, the best way to do is by creating custom icons and illustrations for your web, with custom graphic design elements in your site you
+                                        can differentiate from your competence and give your brand design more strong and power.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion card -->
+                    </div>
+                    <!--/.Accordion wrapper-->
+                </div>
+            </div>
+            <h3 class="graphic_main_h3" style="margin-top: 80px;">What elements include Branding and identity?</h3>
+            <p class="graphic_main_p">The first important element is the typography of your brand, you need to choose the perfect font for how your brand wants to tell about you, and that is important .</p>
+            <p class="graphic_main_p">The color palette of your brand is also important, because every color has one meaning and cause different emotions and feels to audience, and the difference of choosing one color to another can have a big impact on the perception of your
+                brand.
+            </p>
+            <p class="graphic_main_p">The shape of your logo is also important, a good logo design need to transmit your brand essence in every way, and forms can play a huge role in how your audience will react ro your logo.</p>
+        </div>
+    </section>
+
+    <section id="order_us">
+        <div class="container">
+            <a href="index.html#contact">Order Us</a>
+        </div>
+    </section>
+
+
+
+    <!--Footer-->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="Follow-Us col-xm-6 col-sm-4 col-lg-2">
+                    <h3 class="footer-title-text">Follow Us</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/technooutsource">
+                                <ion-icon name="logo-facebook" class="socil_icon"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <ion-icon name="logo-twitter" class="socil_icon"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <ion-icon name="logo-youtube" class="socil_icon"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="links col-xm-6 col-sm-4 col-lg-2">
+                    <h3 class="footer-title-text">Links</h3>
+                    <ul class="link-ul">
+                        <li class="link-li">
+                            <a href="index.html" class="links-a">Home</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#About_us" class="links-a">About Us</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#our_course" class="links-a">Courses</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#Our-Services" class="links-a">Our Services</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#portfolio" class="links-a">Portfolio</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#blog" class="links-a">Blogs</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#contact" class="links-a">Contact US</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="admission.html" class="links-a">Admission</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Address col-xm-12 col-sm-4 col-lg-3">
+                    <h3 class="footer-title-text">Address</h3>
+                    <P class="Address-p">BANGLADESH OFFICE ADDRESS: Plot# 10/C, Road# 1/1, Block# Ka/Kha, Section# 6, Dhaka 1216</P>
+                    <p class="Address-p">UK OFFICE ADDRESS: No 1, 284 Barking Road, Eastham, London E6 3BA, United Kingdom.</p>
+                </div>
+                <div class="Map col-sm-12 col-lg-5">
+                    <h3 class="footer-title-text">Map</h3>
+                    <a href="https://goo.gl/maps/Kj7FSzo3uoxNYFqR8"><img src="images/map.png" class="map_image" /></a>
+                    <P class="Map-p">Mirpur, Dhaka, Bangladesh</P>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--CopyRight-->
+    <p class="copyright-text">Copyright and Reserved by ©Techno Outsource Designed by Team TechBCD</p>
+
+    <!-- Scroll Up -->
+    <div id="back-top">
+        <a title="Go to Top" href="#"><i class="fa fa-chevron-up"></i></a>
+    </div>
+
+    <!-- Java script Start -->
+    <script type="text/javascript " src="js/jquery.js "></script>
+    <script type="text/javascript " src="js/bootstrap.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
+    <script type="text/javascript " src="js/lightbox.min.js "></script>
+    <script type="text/javascript " src="js/wow.min.js "></script>
+    <script type="text/javascript " src="js/main.js "></script>
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js "></script>
+    <script type="text/javascript " src="js/jquery.nav.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- ===== IONICONS ===== -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script type="text/javascript " src="js/jquery.slicknav.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // Disable Right Click
+        document.querySelector('body').addEventListener('contextmenu', disableRightClick);
+
+        function disableRightClick(e) {
+            e.preventDefault();
+        }
+
+        $(function() {
+            var navbar = $('.header-sticky');
+            $(window).scroll(function() {
+                if ($(window).scrollTop() <= 40) {
+                    navbar.removeClass('navbar-scroll');
+                } else {
+                    navbar.addClass('navbar-scroll');
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Techno OutSource</title>
+
+    <style>
+        #service_home {
+            background-image: url(images/service_page_bg.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .software_development_services {
+            padding: 30px 0px 100px 0px;
+        }
+        
+        .software_development_services_h4 {
+            font-size: 32px;
+            font-weight: 700;
+            text-align: left;
+            color: #434343;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .software_development_services_p {
+            font-size: 18px;
+            font-weight: 300;
+            text-align: left;
+            color: #434343;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin-bottom: 70px;
+        }
+        
+        .software_development_services_card {
+            border-top: 8px solid #2878FF !important;
+            padding: 50px 20px;
+            margin: 8px 0px 0px 0px;
+            transition: .3s;
+        }
+        
+        .software_development_services_card:hover {
+            margin: 0px 0px 0px 0px;
+        }
+        
+        .software_development_services_card_h5 {
+            font-size: 20px;
+            text-align: center;
+            font-weight: 700;
+            color: #2878FF;
+        }
+        
+        .software_development_services_card_p {
+            font-size: 16px;
+            text-align: left;
+            font-weight: 300;
+            color: #666666;
+        }
+        
+        .software_development_services_card_a {
+            width: 100%;
+            background-color: #2878FF;
+            padding: 12px 0px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: normal;
+            display: block;
+            margin: 0px auto 0px;
+            text-align: center;
+        }
+        
+        .software_development_services_card_span {
+            font-weight: 700;
+        }
+        
+        .software_development_tabs {
+            padding: 30px 0px 100px 0px;
+        }
+        /*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*/
+        
+        .nav-pills-custom .nav-link {
+            color: #aaa;
+            background: #fff;
+            position: relative;
+        }
+        
+        .nav-pills-custom .nav-link.active {
+            color: #45b649;
+            background: #fff;
+        }
+        
+        .software_development_tabs_image {
+            margin: 12px 0px;
+        }
+        
+        .software_development_tabs_image img {
+            height: 152px;
+            display: block;
+            margin: auto;
+        }
+        /* Add indicator arrow for the active tab */
+        
+        @media (min-width: 992px) {
+            .nav-pills-custom .nav-link::before {
+                content: '';
+                display: block;
+                border-top: 8px solid transparent;
+                border-left: 10px solid #fff;
+                border-bottom: 8px solid transparent;
+                position: absolute;
+                top: 50%;
+                right: -10px;
+                transform: translateY(-50%);
+                opacity: 0;
+            }
+        }
+        
+        @media (min-width: 175px) and (max-width: 575px) {
+            .software_development_tabs_image img {
+                height: 40px;
+            }
+        }
+        
+        .nav-pills-custom .nav-link.active::before {
+            opacity: 1;
+        }
+        
+        #Software_types_we_develop {
+            padding: 30px 0px 100px 0px;
+        }
+        
+        .Software_types_we_develop_card {
+            border-top: 8px solid #2878FF !important;
+            padding: 50px 18px;
+        }
+        
+        .Software_types_we_develop_h4 {
+            font-size: 32px;
+            font-weight: 700;
+            text-align: left;
+            color: #434343;
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 34px;
+            margin-top: 28px;
+        }
+        
+        .Software_types_we_develop_card ul {
+            text-align: left;
+            padding: 0px 20px;
+            margin: 0px;
+        }
+        
+        .Software_types_we_develop_card ul li {
+            list-style: disc;
+            color: #666666;
+            font-size: 16px;
+            padding: 6px 0px;
+        }
+    </style>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/slicknav.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/admission.css" rel="stylesheet">
+    <link href="css/service_page.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="font/flaticon.css">
+</head>
+<!--/head-->
+
+<body onload="screenLoad()" style="scroll-behavior: smooth;">
+
+    <!--? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="img/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--#header-->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-top">
+                    <!-- Left Social -->
+                    <div class="container">
+                        <div class="row">
+                            <ul class="header-social col-6">
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.facebook.com/technooutsource"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google"></i></a></li>
+                            </ul>
+
+                            <ul class="header-email col-6">
+                                <li style="border-left: 1ps solid black;">
+                                    <P>info@technooutsourcebd.com</P>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container logo_part">
+                    <div class="row">
+                        <div class="logo col-4">
+                            <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        </div>
+
+                        <div class="logo col-8">
+                            <ul class="logo_part_ul row">
+                                <li class="col-2"></li>
+                                <li class="col-5">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="flaticon-working-hours"></span>
+                                        </div>
+                                        <div class="col-9">
+                                            <h4 class="sub_header_title">Office Hour</h4>
+                                            <p class="sub_header_p">Sat-Thu:<br>09:00 AM To 5:00 PM</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-5">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="flaticon-time-call"></span>
+                                        </div>
+                                        <div class="col-9">
+                                            <h4 class="sub_header_title">Call Us</h4>
+                                            <p class="sub_header_p">+880 1871415788<br>+880 258 0515 19</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-bottom header-sticky">
+                    <!-- Logo -->
+                    <div class="container">
+                        <div class="menu-wrapper">
+                            <!-- Logo -->
+                            <div class="logo logo2 d-block d-lg-none">
+                                <a href="index.html"><img src="images/logo.png" alt=""></a>
+                            </div>
+                            <!-- Main-menu -->
+                            <div class="main-menu col-12">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li style="display: none;"><a id="nav_a" href="index.html">Home</a></li>
+                                        <li class=""><a id="nav_a" href="index.html#home-slider">Home</a></li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#About_us">About Us</a></li>
+
+                                        <li class=""><a id="nav_a" class="" href="index.html#our_course">Courses</a>
+                                            <ul class="submenu">
+                                                <li><a href="graphic_design.html">Graphic Design</a></li>
+                                                <li><a href="web_design.html">Web Design</a></li>
+                                                <li><a href="Web_Development.html">Web Development</a></li>
+                                                <li><a href="Digital_Marketing.html">Digital Marketing</a></li>
+                                                <li><a href="ui_ux_cource.html">UI/UX Design</a></li>
+                                                <li><a href="app_development.html">App Development</a></li>
+                                                <li><a href="Animation_cource.html">3D Animation</a></li>
+                                                <li><a href="Interior_and_Exterior_Design.html">Interior Design</a></li>
+                                                <li><a href="#">Video Editing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="active"><a id="nav_a" class="" href="index.html#Our-Services">Our Services</a>
+                                            <ul class="submenu">
+                                                <li><a href="web.html">Web Design & Development</a></li>
+                                                <li><a href="graphic.html">Graphic Design</a></li>
+                                                <li><a href="SEO.html">SEO</a></li>
+                                                <li><a href="app_page.html">Application Development</a></li>
+                                                <li><a href="http://cybercombd.com">Hardware Services</a></li>
+                                                <li><a href="marketing.html">Maketing Strategy</a></li>
+                                                <li><a href="Software_Development.html">Software Development</a></li>
+                                                <li><a href="http://www.technooutsource.com/default.asp">ISP Services</a></li>
+                                                <li><a href="Content_Writing.html">Content Management</a></li>
+                                                <li><a href="ui_ux.html">UI/UX</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#portfolio">Portfolio</a></li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#blog">Blog</a></li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#contact">Contact Us</a></li>
+                                        <li class=""><a id="Admission_a" class="" href="admission.html">Admission</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- Header-btn -->
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+
+
+
+
+
+    <!--#Web Home-->
+    <section id="service_home">
+        <div class="container">
+            <h2 class="service_home_tile"><span>Need a software?</span><br> We are here to provide the<br> best for your company</h2>
+        </div>
+    </section>
+
+    <section id="software_development_services">
+        <div class="container">
+            <h4 class="software_development_services_h4">Software Development Services</h4>
+            <p class="software_development_services_p"><span class="software_development_services_span">Invent, build, integrate, scale</span> and <span class="software_development_services_span">upgrade</span> your applications with Techno OutSource BD! For more than three decades, Techno OutSource
+                BD has been harnessing digital technologies for the benefit of fortune 500 businesses, mid and large enterprises, and startups across the variety of industries. Fully in the art and science of software engineering and management, we help
+                you to build high-quality software solutions and products as well as deliver a wide range of related professional services.</p>
+
+            <h4 class="software_development_services_h4">What service are you looking for?</h4>
+            <hr class="software_development_services_hr">
+
+            <div class="row">
+                <div class="row row-cols-1 row-cols-md-4">
+                    <div class="col mb-4">
+                        <!-- Card -->
+                        <div class="card software_development_services_card">
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <h5 class="software_development_services_card_h5" style="margin-bottom:40px;">Software Consulting</h5>
+                                <p class="software_development_services_card_p" style="margin-bottom:40px;">A holistic set of <span class="software_development_services_card_span">consulting services for both new and ongoing software development projects</span> – from ideation and feasibility study to implementation strategy.</p>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="col mb-4">
+                        <!-- Card -->
+                        <div class="card software_development_services_card">
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <h5 class="software_development_services_card_h5" style="margin-bottom:16px;">Custom software development</h5>
+                                <p class="software_development_services_card_p" style="margin-bottom:62px;">Development of web, cloud, mobile, and desktop software solutions<span class="software_development_services_card_span">to address the unique complex needs or objectives of your business.</span></p>
+
+                            </div>
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="col mb-4">
+                        <!-- Card -->
+                        <div class="card software_development_services_card">
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <h5 class="software_development_services_card_h5" style="margin-bottom:16px;">Software product development</h5>
+                                <p class="software_development_services_card_p" style="margin-bottom:40px;">Development of single- / multi-tenant SaaS, mobile and desktop <span class="software_development_services_card_span"> applications for marketing and distributing to mass enterprise/consumer users.</span></p>
+
+                            </div>
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="col mb-4">
+                        <!-- Card -->
+                        <div class="card software_development_services_card">
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <h5 class="software_development_services_card_h5" style="margin-bottom:16px;">Software development outsourcing</h5>
+                                <p class="software_development_services_card_p" style="margin-bottom:61px;">Shouldering <span class="software_development_services_card_span"> complete software development project pipeline or its part </span> of mid and large enterprises to support their business growth.</p>
+
+                            </div>
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="col mb-4">
+                        <!-- Card -->
+                        <div class="card software_development_services_card">
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <h5 class="software_development_services_card_h5" style="margin-bottom:16px;">Enterprise application services</h5>
+                                <p class="software_development_services_card_p" style="margin-bottom:40px;">A broad set of services – Help Desk & Support, cloud migration, legacy reengineering, and more – to<span class="software_development_services_card_span">keep your business-critical applications healthy and stable.</span></p>
+
+                            </div>
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="col mb-4">
+                        <!-- Card -->
+                        <div class="card software_development_services_card">
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <h5 class="software_development_services_card_h5" style="margin-bottom:16px;">Development team augmentation</h5>
+                                <p class="software_development_services_card_p" style="margin-bottom:106px;">Several IT specilists<span class="software_development_services_card_span">to help you handle the lack of your internal resources </span> and capabilities.</p>
+
+                            </div>
+                        </div>
+                        <!-- Card -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="software_development_tabs">
+        <div class="container py-4">
+            <h4 class="software_development_services_h4">TECHNOLOGIES WE USE </h4>
+            <p class="software_development_services_p">We employ the proven combination of the latest and classic trusted technologies, having the following technology stack as our basis: </p>
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- Tabs nav -->
+                    <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link mb-3 p-3 shadow active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                            <span class="font-weight-bold small text-uppercase">Back end</span></a>
+
+                        <a class="nav-link mb-3 p-3 shadow" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                            <span class="font-weight-bold small text-uppercase">Front end</span></a>
+
+                        <a class="nav-link mb-3 p-3 shadow" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                            <span class="font-weight-bold small text-uppercase">Databases</span></a>
+                    </div>
+                </div>
+
+
+                <div class="col-md-9">
+                    <!-- Tabs content -->
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade shadow rounded bg-white show active p-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <h4 class="font-italic mb-4">Back end</h4>
+                            <div class="Seoftware_development_options">
+                                <div class="row">
+                                    <div class="col-4 software_development_tabs_image">
+                                        <img src="img/dot_net.png" />
+                                    </div>
+                                    <div class="col-4 software_development_tabs_image">
+                                        <img src="img/c++.png" />
+                                    </div>
+                                    <div class="col-4 software_development_tabs_image">
+                                        <img src="img/python.png" />
+                                    </div>
+                                    <div class="col-4 software_development_tabs_image">
+                                        <img src="img/php.png" />
+                                    </div>
+                                    <div class="col-4 software_development_tabs_image">
+                                        <img src="img/nodejslogo.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <h4 class="font-italic mb-4">Front end</h4>
+                            <div class="Seoftware_development_options">
+                                <div class="row">
+                                    <div class="col-4 software_development_tabs_image">
+                                        <img src="img/html.png" />
+                                    </div>
+                                    <div class="col-4 software_development_tabs_image">
+                                        <img src="img/css.jpg" />
+                                    </div>
+                                    <div class="col-4 software_development_tabs_image">
+                                        <img src="img/js.png" />
+                                    </div>
+                                    <div class="col-4 software_development_tabs_image">
+                                        <img src="img/react.png" />
+                                    </div>
+                                    <div class="col-4 software_development_tabs_image">
+                                        <img src="img/anguler.png" />
+                                    </div>
+                                    <div class="col-4 software_development_tabs_image">
+                                        <img src="img/vuejs.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                            <h4 class="font-italic mb-4">Databases</h4>
+                            <div class="row">
+                                <div class="col-6 software_development_tabs_image">
+                                    <img src="img/mysql.png" />
+                                </div>
+                                <div class="col-6 software_development_tabs_image">
+                                    <img src="img/mongodb.png" />
+                                </div>
+                                <div class="col-6 software_development_tabs_image">
+                                    <img src="img/oracle.png" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Software_types_we_develop">
+        <div class="container">
+            <h4 class="Software_types_we_develop_h4">Software types we develop</h4>
+
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col mb-3">
+                    <!-- Card -->
+                    <div class="card Software_types_we_develop_card">
+                        <!--Card image-->
+                        <div class="view overlay">
+
+                            <ul>
+                                <li>Finance, accounting, invoicing and billing</li>
+                                <li>Budgeting</li>
+                                <li>Document management, contract management, record management</li>
+                                <li>SCM (Supply Chain Management)</li>
+                                <li>Sales</li>
+                                <li>Marketing</li>
+                                <li>Customer service, incl. self-service</li>
+                                <li>E-government</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Card -->
+                </div>
+
+                <div class="col mb-3">
+                    <!-- Card -->
+                    <div class="card Software_types_we_develop_card">
+                        <!--Card image-->
+                        <div class="view overlay">
+
+                            <ul>
+                                <li>Asset management</li>
+                                <li>Procurement, vendor management, vendor portals</li>
+                                <li>Inventory management and optimization</li>
+                                <li>Project management</li>
+                                <li>Business intelligence</li>
+                                <li>Ecommerce</li>
+                                <li>Customer portals</li>
+                                <li>Content management, DAM</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Card -->
+                </div>
+                <div class="col mb-3">
+                    <!-- Card -->
+                    <div class="card Software_types_we_develop_card">
+                        <!--Card image-->
+                        <div class="view overlay" style="margin-bottom:20px;">
+
+                            <ul>
+                                <li>eLearning</li>
+                                <li>Knowledge management</li>
+                                <li>Personal productivity</li>
+                                <li>Digital workplace</li>
+                                <li>Employee monitoring</li>
+                                <li>Emergency response, incident management</li>
+                                <li>Information security</li>
+                                <li>Healthcare</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="order_us">
+        <div class="container">
+            <a href="index.html#contact">Order Us</a>
+        </div>
+    </section>
+
+
+    <!--Footer-->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="Follow-Us col-xm-6 col-sm-4 col-lg-2">
+                    <h3 class="footer-title-text">Follow Us</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/technooutsource">
+                                <ion-icon name="logo-facebook" class="socil_icon"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <ion-icon name="logo-twitter" class="socil_icon"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <ion-icon name="logo-youtube" class="socil_icon"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="links col-xm-6 col-sm-4 col-lg-2">
+                    <h3 class="footer-title-text">Links</h3>
+                    <ul class="link-ul">
+                        <li class="link-li">
+                            <a href="index.html" class="links-a">Home</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#About_us" class="links-a">About Us</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#our_course" class="links-a">Courses</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#Our-Services" class="links-a">Our Services</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#portfolio" class="links-a">Portfolio</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#blog" class="links-a">Blogs</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#contact" class="links-a">Contact US</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="admission.html" class="links-a">Admission</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Address col-xm-12 col-sm-4 col-lg-3">
+                    <h3 class="footer-title-text">Address</h3>
+                    <P class="Address-p">BANGLADESH OFFICE ADDRESS: Plot# 10/C, Road# 1/1, Block# Ka/Kha, Section# 6, Dhaka 1216</P>
+                    <p class="Address-p">UK OFFICE ADDRESS: No 1, 284 Barking Road, Eastham, London E6 3BA, United Kingdom.</p>
+                </div>
+                <div class="Map col-sm-12 col-lg-5">
+                    <h3 class="footer-title-text">Map</h3>
+                    <a href="https://goo.gl/maps/Kj7FSzo3uoxNYFqR8"><img src="images/map.png" class="map_image" /></a>
+                    <P class="Map-p">Mirpur, Dhaka, Bangladesh</P>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CopyRight-->
+    <p class="copyright-text">Copyright and Reserved by ©Techno Outsource Designed by Team TechBCD</p>
+
+    <!-- Scroll Up -->
+    <div id="back-top">
+        <a title="Go to Top" href="#"><i class="fa fa-chevron-up"></i></a>
+    </div>
+
+    <!-- Java script Start -->
+    <script type="text/javascript " src="js/jquery.js "></script>
+    <script type="text/javascript " src="js/bootstrap.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
+    <script type="text/javascript " src="js/lightbox.min.js "></script>
+    <script type="text/javascript " src="js/wow.min.js "></script>
+    <script type="text/javascript " src="js/main.js "></script>
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js "></script>
+    <script type="text/javascript " src="js/jquery.nav.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- ===== IONICONS ===== -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script type="text/javascript " src="js/jquery.slicknav.min.js "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // Disable Right Click
+        document.querySelector('body').addEventListener('contextmenu', disableRightClick);
+
+        function disableRightClick(e) {
+            e.preventDefault();
+        }
+
+        $(function() {
+            var navbar = $('.header-sticky');
+            $(window).scroll(function() {
+                if ($(window).scrollTop() <= 40) {
+                    navbar.removeClass('navbar-scroll');
+                } else {
+                    navbar.addClass('navbar-scroll');
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
+
+/*************************
+*******service_home******
+**************************/
+
+#service_home {
+    position: relative;
+    padding: 36px 0 80px 0;
+    display: block;
+}
+
+.service_home_tile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    color: #434343;
+    margin-top: 100px;
+    text-align: center;
+    padding: 80px 0px;
+}
+
+#service_home span {
+    color: #2878FF;
+}
+
+
+/* order_us */
+
+#order_us {
+    height: auto;
+    padding: 22px 0px 100px 0px;
+}
+
+#order_us a {
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-style: 300;
+    color: #2878FF;
+    text-align: center;
+    padding: 12px 20px;
+    border: 1px solid #2878FF;
+    border-radius: 4px;
+    width: 22%;
+    margin: auto;
+    display: block;
+    transition: .3;
+    background-color: transparent;
+}
+
+#order_us a:hover {
+    background-color: #2878FF;
+    color: #fff;
+}
+
+
+/*md only*/
+
+@media (min-width: 779px) and (max-width: 991px) {
+    .col-md-4.portfolio-item {
+        width: 33%;
+    }
+    .service_home_tile {
+        font-size: 40px;
+        text-align: center;
+        padding: 0px 0 10px 0;
+        font-weight: 700;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 778px) {
+    .service_home_tile {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 66px;
+        margin-bottom: 20px;
+    }
+    #service_home .btn-common {
+        width: 34%;
+    }
+    #service_portfolio .col-sm-6 {
+        width: 50%;
+    }
+    #order_us {
+        padding: 40px 0px 40px;
+    }
+    #order_us a {
+        width: 40%;
+    }
+}
+
+
+/* mobile */
+
+@media (min-width: 100px) and (max-width: 419px) {
+    .service_home_tile {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 66px;
+        margin-bottom: 20px;
+    }
+    #service_portfolio .col-sm-6 {
+        width: 50%;
+    }
+    .images__Shadow a {
+        font-size: 12px;
+    }
+    #service_portfolio .btn-common {
+        width: 47%;
+    }
+    #order_us {
+        padding: 20px 0px 20px;
+    }
+    #order_us a {
+        width: 60%;
+        font-size: 16px;
+    }
+}

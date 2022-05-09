@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Techno OutSource</title>
+
+    <style>
+        #service_home {
+            background-image: url(images/service_page_bg.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        #ui_ux_main {
+            background: #f5f5f5 0 100% repeat-x;
+            position: relative;
+            padding: 100px 0;
+        }
+        
+        .ui_ux_main {
+            font-size: 28px;
+            text-align: left;
+            color: #434343;
+            font-family: "Roboto";
+            font-weight: 500;
+        }
+        
+        .ui_ux_main_content_mid {
+            margin-top: 20px;
+            padding: 30px 20%;
+        }
+        
+        .ui_ux_main_content_mid img {
+            height: 60px;
+            width: 60px;
+            margin-bottom: 30px;
+        }
+        
+        .ui_ux_main_content_mid h5 {
+            color: #434343;
+            font-size: 18px;
+            font-family: 'Roboto';
+            font-weight: 500;
+            text-align: left;
+        }
+        
+        .ui_ux_main_content_mid p {
+            color: #434343;
+            font-size: 18px;
+            font-family: 'Roboto';
+            font-weight: 300;
+            text-align: left;
+        }
+        
+        #ui_ux_table {
+            background: #fff 0 100% repeat-x;
+            position: relative;
+            padding: 100px 0;
+        }
+        
+        .ui_ux_table_title {
+            font-family: 'Roboto';
+            font-size: 34px;
+            text-align: left;
+            font-weight: 500;
+            color: #434343;
+            margin-bottom: 50px;
+        }
+        
+        #ui_ux_table table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        #ui_ux_table td,
+        #ui_ux_table th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 22px 16px;
+            font-size: 18px;
+            font-family: 'Roboto';
+            font-weight: 300;
+        }
+        
+        #ui_ux_table tr:nth-child(even) {
+            background-color: rgb(191, 217, 255);
+        }
+        
+        #ui_ux_table i {
+            text-align: center;
+            display: block;
+        }
+        
+        .tick {
+            color: rgb(32, 160, 15);
+            text-align: center;
+        }
+        
+        .cross {
+            color: rgb(194, 27, 15);
+            text-align: center;
+        }
+    </style>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/slicknav.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/admission.css" rel="stylesheet">
+    <link href="css/service_page.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="font/flaticon.css">
+</head>
+<!--/head-->
+
+<body onload="screenLoad()" style="scroll-behavior: smooth;">
+
+    <!--? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="img/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--#header-->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-top">
+                    <!-- Left Social -->
+                    <div class="container">
+                        <div class="row">
+                            <ul class="header-social col-6">
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.facebook.com/technooutsource"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google"></i></a></li>
+                            </ul>
+
+                            <ul class="header-email col-6">
+                                <li style="border-left: 1ps solid black;">
+                                    <P>info@technooutsourcebd.com</P>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container logo_part">
+                    <div class="row">
+                        <div class="logo col-4">
+                            <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        </div>
+
+                        <div class="logo col-8">
+                            <ul class="logo_part_ul row">
+                                <li class="col-2"></li>
+                                <li class="col-5">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="flaticon-working-hours"></span>
+                                        </div>
+                                        <div class="col-9">
+                                            <h4 class="sub_header_title">Office Hour</h4>
+                                            <p class="sub_header_p">Sat-Thu:<br>09:00 AM To 5:00 PM</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-5">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="flaticon-time-call"></span>
+                                        </div>
+                                        <div class="col-9">
+                                            <h4 class="sub_header_title">Call Us</h4>
+                                            <p class="sub_header_p">+880 1871415788<br>+880 258 0515 19</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-bottom header-sticky">
+                    <!-- Logo -->
+                    <div class="container">
+                        <div class="menu-wrapper">
+                            <!-- Logo -->
+                            <div class="logo logo2 d-block d-lg-none">
+                                <a href="index.html"><img src="images/logo.png" alt=""></a>
+                            </div>
+                            <!-- Main-menu -->
+                            <div class="main-menu col-12">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li style="display: none;"><a id="nav_a" href="index.html">Home</a></li>
+                                        <li class=""><a id="nav_a" href="index.html#home-slider">Home</a></li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#About_us">About Us</a></li>
+
+                                        <li class=""><a id="nav_a" class="" href="index.html#our_course">Courses</a>
+                                            <ul class="submenu">
+                                                <li><a href="graphic_design.html">Graphic Design</a></li>
+                                                <li><a href="web_design.html">Web Design</a></li>
+                                                <li><a href="Web_Development.html">Web Development</a></li>
+                                                <li><a href="Digital_Marketing.html">Digital Marketing</a></li>
+                                                <li><a href="ui_ux_cource.html">UI/UX Design</a></li>
+                                                <li><a href="app_development.html">App Development</a></li>
+                                                <li><a href="Animation_cource.html">3D Animation</a></li>
+                                                <li><a href="Interior_and_Exterior_Design.html">Interior Design</a></li>
+                                                <li><a href="#">Video Editing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="active"><a id="nav_a" class="" href="index.html#Our-Services">Our Services</a>
+                                            <ul class="submenu">
+                                                <li><a href="web.html">Web Design & Development</a></li>
+                                                <li><a href="graphic.html">Graphic Design</a></li>
+                                                <li><a href="SEO.html">SEO</a></li>
+                                                <li><a href="app_page.html">Application Development</a></li>
+                                                <li><a href="http://cybercombd.com">Hardware Services</a></li>
+                                                <li><a href="marketing.html">Maketing Strategy</a></li>
+                                                <li><a href="Software_Development.html">Software Development</a></li>
+                                                <li><a href="http://www.technooutsource.com/default.asp">ISP Services</a></li>
+                                                <li><a href="Content_Writing.html">Content Management</a></li>
+                                                <li><a href="ui_ux.html">UI/UX</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#portfolio">Portfolio</a></li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#blog">Blog</a></li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#contact">Contact Us</a></li>
+                                        <li class=""><a id="Admission_a" class="" href="admission.html">Admission</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- Header-btn -->
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+
+    <!--#Web Home-->
+    <section id="service_home">
+        <div class="container">
+            <h2 class="service_home_tile"><span>Want to gather more users?</span> Make your business more <br> User Centric with Us.</h2>
+        </div>
+    </section>
+
+
+
+    <section id="ui_ux_main">
+        <div class="container">
+            <h2 class="ui_ux_main">If you want to design a product using our top design talent, this is the plan for you. You only pay for the actual design with no setup and management fees getting 20% off our per-hour rates.</h2>
+            <div class="row">
+                <div class="ui_ux_main_content col-xm-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="ui_ux_main_content_mid">
+                        <img src="img/ui_ux_one.png" />
+                        <h5>Hire top design talent</h5>
+                        <p>We have very specific, unique skill sets to create amazing product design from start to finish.</p>
+                    </div>
+                </div>
+
+                <div class="ui_ux_main_content col-xm-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="ui_ux_main_content_mid">
+                        <img src="img/ui_ux_two.png" />
+                        <h5>Start a project in hours</h5>
+                        <p>Our hiring cycle is quick. Once you reviewed our best candidates, we can start immediately.</p>
+                    </div>
+                </div>
+
+                <div class="ui_ux_main_content col-xm-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="ui_ux_main_content_mid">
+                        <img src="img/ui_ux_three.png" />
+                        <h5>Cut your overhead costs</h5>
+                        <p>Office rent, work station, bonus pay – all these overhead costs are on us. You only pay for design.</p>
+                    </div>
+                </div>
+
+                <div class="ui_ux_main_content col-xm-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="ui_ux_main_content_mid">
+                        <img src="img/ui_ux_four.png" />
+                        <h5>Gain full control</h5>
+                        <p>By hiring a designer at Eleken you get a remote team member who you're in complete control of.</p>
+                    </div>
+                </div>
+
+                <div class="ui_ux_main_content col-xm-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="ui_ux_main_content_mid">
+                        <img src="img/ui_ux_five.png" />
+                        <h5>Change your team size</h5>
+                        <p>If you need to get more designers or have to downsize your team, we can do it immediately.</p>
+                    </div>
+                </div>
+
+                <div class="ui_ux_main_content col-xm-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="ui_ux_main_content_mid">
+                        <img src="img/ui_ux_six.png" />
+                        <h5>Talk to designers directly</h5>
+                        <p>We don't put the project manager in the middle and let our clients and designers directly talk to each other.</p>
+                    </div>
+                </div>
+
+                <div class="ui_ux_main_content col-xm-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="ui_ux_main_content_mid">
+                        <img src="img/ui_ux_seven.png" />
+                        <h5>Benefit from a team effort</h5>
+                        <p>We're a team, not freelancers. Every designer collaborates with the team to get feedback and improve.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ui_ux_table">
+        <div class="container">
+            <h2 class="ui_ux_table_title">If you compare TechnoOutSourceBD with outsourcing software development companies or freelancers, your choice will be obvious. We're the most qualified designers you can get.</h2>
+            <table>
+                <tr>
+                    <td>What you get</td>
+                    <td>TechnoOutSourceBD</td>
+                    <td>Outsourcing vendor</td>
+                    <td>Freelancer</td>
+                </tr>
+                <tr>
+                    <td>The best design talent</td>
+                    <td><i class="fa fa-check tick"></i></td>
+                    <td><i class="fa fa-times cross"></i></td>
+                    <td><i class="fa fa-times cross"></i></td>
+                </tr>
+                <tr>
+                    <td>Designers with expertise in design for SaaS</td>
+                    <td><i class="fa fa-check tick"></i></td>
+                    <td><i class="fa fa-times cross"></i></td>
+                    <td><i class="fa fa-times cross"></i></td>
+                </tr>
+                <tr>
+                    <td>Direct access to designers</td>
+                    <td><i class="fa fa-check tick"></i></td>
+                    <td><i class="fa fa-times cross"></i></td>
+                    <td><i class="fa fa-check tick"></i></td>
+                </tr>
+                <tr>
+                    <td>Team scaling on demand</td>
+                    <td><i class="fa fa-check tick"></i></td>
+                    <td><i class="fa fa-check tick"></i></td>
+                    <td><i class="fa fa-times cross"></i></td>
+                </tr>
+                <tr>
+                    <td>Dedicated account manager</td>
+                    <td><i class="fa fa-check tick"></i></td>
+                    <td><i class="fa fa-check tick"></i></td>
+                    <td><i class="fa fa-times cross"></i></td>
+                </tr>
+                <tr>
+                    <td>It takes days from project request to start</td>
+                    <td><i class="fa fa-check tick"></i></td>
+                    <td><i class="fa fa-times cross"></i></td>
+                    <td><i class="fa fa-check tick"></i></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+
+    <section id="order_us">
+        <div class="container">
+            <a href="index.html#contact">Order Us</a>
+        </div>
+    </section>
+
+
+    <!--Footer-->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="Follow-Us col-xm-6 col-sm-4 col-lg-2">
+                    <h3 class="footer-title-text">Follow Us</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/technooutsource">
+                                <ion-icon name="logo-facebook" class="socil_icon"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <ion-icon name="logo-twitter" class="socil_icon"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <ion-icon name="logo-youtube" class="socil_icon"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="links col-xm-6 col-sm-4 col-lg-2">
+                    <h3 class="footer-title-text">Links</h3>
+                    <ul class="link-ul">
+                        <li class="link-li">
+                            <a href="index.html" class="links-a">Home</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#About_us" class="links-a">About Us</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#our_course" class="links-a">Courses</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#Our-Services" class="links-a">Our Services</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#portfolio" class="links-a">Portfolio</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#blog" class="links-a">Blogs</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#contact" class="links-a">Contact US</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="admission.html" class="links-a">Admission</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Address col-xm-12 col-sm-4 col-lg-3">
+                    <h3 class="footer-title-text">Address</h3>
+                    <P class="Address-p">BANGLADESH OFFICE ADDRESS: Plot# 10/C, Road# 1/1, Block# Ka/Kha, Section# 6, Dhaka 1216</P>
+                    <p class="Address-p">UK OFFICE ADDRESS: No 1, 284 Barking Road, Eastham, London E6 3BA, United Kingdom.</p>
+                </div>
+                <div class="Map col-sm-12 col-lg-5">
+                    <h3 class="footer-title-text">Map</h3>
+                    <a href="https://goo.gl/maps/Kj7FSzo3uoxNYFqR8"><img src="images/map.png" class="map_image" /></a>
+                    <P class="Map-p">Mirpur, Dhaka, Bangladesh</P>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--CopyRight-->
+    <p class="copyright-text">Copyright and Reserved by ©Techno Outsource Designed by Team TechBCD</p>
+
+
+    <!-- Scroll Up -->
+    <div id="back-top">
+        <a title="Go to Top" href="#"><i class="fa fa-chevron-up"></i></a>
+    </div>
+
+    <!-- Java script Start -->
+    <script type="text/javascript " src="js/jquery.js "></script>
+    <script type="text/javascript " src="js/bootstrap.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
+    <script type="text/javascript " src="js/lightbox.min.js "></script>
+    <script type="text/javascript " src="js/wow.min.js "></script>
+    <script type="text/javascript " src="js/main.js "></script>
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js "></script>
+    <script type="text/javascript " src="js/jquery.nav.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- ===== IONICONS ===== -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script type="text/javascript " src="js/jquery.slicknav.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // Disable Right Click
+        document.querySelector('body').addEventListener('contextmenu', disableRightClick);
+
+        function disableRightClick(e) {
+            e.preventDefault();
+        }
+
+        $(function() {
+            var navbar = $('.header-sticky');
+            $(window).scroll(function() {
+                if ($(window).scrollTop() <= 40) {
+                    navbar.removeClass('navbar-scroll');
+                } else {
+                    navbar.addClass('navbar-scroll');
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

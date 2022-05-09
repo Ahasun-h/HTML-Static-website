@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Techno OutSource</title>
+
+    <style>
+        #service_home {
+            background-image: url(images/service_page_bg.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        #seo_service_information {
+            padding: 30px 0 100px 0;
+        }
+        
+        .seo_service_information_header_tile {
+            font-size: 40px;
+            line-height: 1.2em;
+            color: #666666;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        #seo_service_information span::before {
+            font-family: Flaticon;
+            font-size: 48px;
+            font-style: normal;
+            margin-left: 0px;
+            text-align: left;
+            display: block;
+            color: #666666;
+            margin-top: 70px;
+            margin-bottom: 48px;
+        }
+        
+        .seo_service_information_h5 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #666666;
+            text-align: left;
+        }
+        
+        .seo_service_information_p {
+            font-size: 18px;
+            font-weight: 300;
+            color: #434343;
+            text-align: left;
+        }
+        /* seo_price_table */
+        
+        #seo_price_table {
+            padding: 30px 0 100px 0;
+        }
+        
+        .pricingTable {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            padding: 0 0 30px 30px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .pricingTable:after {
+            content: "";
+            background: #00A897;
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+        .pricingTable .pricing-content {
+            background-color: #fff;
+            padding: 15px 18px 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .pricingTable .pricingTable-header {
+            padding: 20px 10px;
+            margin: 0 0 5px;
+        }
+        
+        .pricingTable .title {
+            color: #333;
+            font-size: 36px;
+            font-weight: 300;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+        
+        .pricingTable .content-list {
+            padding: 0;
+            margin: 0 0 27px;
+            list-style: none;
+            display: inline-block;
+        }
+        
+        .pricingTable .content-list li {
+            color: #333;
+            font-size: 16px;
+            text-transform: capitalize;
+            text-align: center !important;
+            padding: 0 0 0 0px;
+            margin: 0 0 27px;
+            position: relative;
+            font-family: roboto;
+        }
+        
+        .pricingTable-header_subtitle {
+            font-weight: 700;
+            color: #666666;
+        }
+        
+        .pricingTable .content-list li:last-child {
+            margin-bottom: 0;
+        }
+        
+        .pricingTable .content-list li.disable:before {
+            content: "\f00d";
+            color: #FF3631;
+        }
+        
+        .pricingTable .price-value {
+            margin: 0 0 20px;
+        }
+        
+        .pricingTable .price-value .amount {
+            font-size: 50px;
+            font-weight: 300;
+            line-height: 40px;
+            margin: 0 0 5px;
+            display: block;
+        }
+        
+        .pricingTable .price-value .duration {
+            font-size: 16px;
+            display: block;
+        }
+        
+        .pricingTable .pricingTable-signup a {
+            color: #fff;
+            background-color: #2878FF;
+            font-size: 20px;
+            font-weight: 500;
+            text-transform: uppercase;
+            padding: 18px 30px;
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            transition: all 0.3s;
+        }
+        
+        .pricingTable .pricingTable-signup a:hover {
+            text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+        }
+        
+        .pricingTable .pricingTable-signup a:before,
+        .pricingTable .pricingTable-signup a:after {
+            content: '';
+            background-color: rgba(0, 0, 0, 0.15);
+            height: 100%;
+            width: 50%;
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -2;
+            transition: all 0.3s ease;
+        }
+        
+        .pricingTable .pricingTable-signup a:after {
+            left: auto;
+            right: 0;
+        }
+        
+        .pricingTable .pricingTable-signup a:hover:before {
+            opacity: 1;
+            top: 50%;
+        }
+        
+        .pricingTable .pricingTable-signup a:hover:after {
+            opacity: 1;
+            top: -50%;
+        }
+        
+        .pricingTable.blue:after,
+        .pricingTable.blue .pricingTable-signup a {
+            background-color: #0089BD;
+        }
+        
+        .pricingTable.magenta:after,
+        .pricingTable.magenta .pricingTable-signup a {
+            background-color: #C70134;
+        }
+        
+        @media only screen and (max-width: 990px) {
+            .pricingTable {
+                margin-bottom: 50px;
+            }
+        }
+        
+        @media (min-width: 576px) and (max-width: 990px) {
+            .pricingTable .title {
+                font-size: 28px;
+            }
+            .pricingTable .price-value .amount {
+                font-size: 34px;
+            }
+        }
+    </style>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/slicknav.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/admission.css" rel="stylesheet">
+    <link href="css/service_page.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="font/flaticon.css">
+</head>
+<!--/head-->
+
+<body onload="screenLoad()" style="scroll-behavior: smooth;">
+
+    <!--? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="img/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--#header-->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-top">
+                    <!-- Left Social -->
+                    <div class="container">
+                        <div class="row">
+                            <ul class="header-social col-6">
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.facebook.com/technooutsource"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google"></i></a></li>
+                            </ul>
+
+                            <ul class="header-email col-6">
+                                <li style="border-left: 1ps solid black;">
+                                    <P>info@technooutsourcebd.com</P>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container logo_part">
+                    <div class="row">
+                        <div class="logo col-4">
+                            <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        </div>
+
+                        <div class="logo col-8">
+                            <ul class="logo_part_ul row">
+                                <li class="col-2"></li>
+                                <li class="col-5">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="flaticon-working-hours"></span>
+                                        </div>
+                                        <div class="col-9">
+                                            <h4 class="sub_header_title">Office Hour</h4>
+                                            <p class="sub_header_p">Sat-Thu:<br>09:00 AM To 5:00 PM</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-5">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="flaticon-time-call"></span>
+                                        </div>
+                                        <div class="col-9">
+                                            <h4 class="sub_header_title">Call Us</h4>
+                                            <p class="sub_header_p">+880 1871415788<br>+880 258 0515 19</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-bottom header-sticky">
+                    <!-- Logo -->
+                    <div class="container">
+                        <div class="menu-wrapper">
+                            <!-- Logo -->
+                            <div class="logo logo2 d-block d-lg-none">
+                                <a href="index.html"><img src="images/logo.png" alt=""></a>
+                            </div>
+                            <!-- Main-menu -->
+                            <div class="main-menu col-12">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li style="display: none;"><a id="nav_a" href="index.html">Home</a></li>
+                                        <li class=""><a id="nav_a" href="index.html#home-slider">Home</a></li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#About_us">About Us</a></li>
+
+                                        <li class=""><a id="nav_a" class="" href="index.html#our_course">Courses</a>
+                                            <ul class="submenu">
+                                                <li><a href="graphic_design.html">Graphic Design</a></li>
+                                                <li><a href="web_design.html">Web Design</a></li>
+                                                <li><a href="Web_Development.html">Web Development</a></li>
+                                                <li><a href="Digital_Marketing.html">Digital Marketing</a></li>
+                                                <li><a href="ui_ux_cource.html">UI/UX Design</a></li>
+                                                <li><a href="app_development.html">App Development</a></li>
+                                                <li><a href="Animation_cource.html">3D Animation</a></li>
+                                                <li><a href="Interior_and_Exterior_Design.html">Interior Design</a></li>
+                                                <li><a href="#">Video Editing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="active"><a id="nav_a" class="" href="index.html#Our-Services">Our Services</a>
+                                            <ul class="submenu">
+                                                <li><a href="web.html">Web Design & Development</a></li>
+                                                <li><a href="graphic.html">Graphic Design</a></li>
+                                                <li><a href="SEO.html">SEO</a></li>
+                                                <li><a href="app_page.html">Application Development</a></li>
+                                                <li><a href="http://cybercombd.com">Hardware Services</a></li>
+                                                <li><a href="marketing.html">Maketing Strategy</a></li>
+                                                <li><a href="Software_Development.html">Software Development</a></li>
+                                                <li><a href="http://www.technooutsource.com/default.asp">ISP Services</a></li>
+                                                <li><a href="Content_Writing.html">Content Management</a></li>
+                                                <li><a href="ui_ux.html">UI/UX</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#portfolio">Portfolio</a></li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#blog">Blog</a></li>
+                                        <li class=""><a id="nav_a" class="" href="index.html#contact">Contact Us</a></li>
+                                        <li class=""><a id="Admission_a" class="" href="admission.html">Admission</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- Header-btn -->
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+
+    <!--#Web Home-->
+    <section id="service_home">
+        <div class="container">
+            <h2 class="service_home_tile">Make Your Website<br><span>Search Engine </span>Optimized</h2>
+        </div>
+    </section>
+
+
+
+    <section id="seo_service_information">
+        <div class="container">
+            <h3 class="seo_service_information_header_tile">What’s Included in Our Custom SEO Packages</h3>
+            <div class="row">
+                <div class="col-xm-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 seo_service_information_content">
+                    <span class="flaticon-add-button"></span>
+                    <h5 class="seo_service_information_h5">Site Health</h5>
+                    <p class="seo_service_information_p">A lot of variables can impact your site’s overall health. Make sure algorithm changes, indexing errors, or manual actions aren’t causing problems.</p>
+                </div>
+                <div class="col-xm-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 seo_service_information_content">
+                    <span class="flaticon-report"></span>
+                    <h5 class="seo_service_information_h5">Competitive Analysis</h5>
+                    <p class="seo_service_information_p">A lot of companies are competing for your keywords. We’ll analyze their strengths and weaknesses to find new opportunities for your success.</p>
+                </div>
+                <div class="col-xm-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 seo_service_information_content">
+                    <span class="flaticon-optimization"></span>
+                    <h5 class="seo_service_information_h5">Page Optimization</h5>
+                    <p class="seo_service_information_p">Make sure your website converts visitors to paying customers and that it’s fully optimized to achieve the best rankings.</p>
+                </div>
+
+                <div class="col-xm-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 seo_service_information_content">
+                    <span class="flaticon-link"></span>
+                    <h5 class="seo_service_information_h5">Link Building</h5>
+                    <p class="seo_service_information_p">Links from high-quality sources drive relevant traffic to your site and help build authority in Google.</p>
+                </div>
+                <div class="col-xm-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 seo_service_information_content">
+                    <span class="flaticon-calendar"></span>
+                    <h5 class="seo_service_information_h5">Monthly Reporting</h5>
+                    <p class="seo_service_information_p">Stay completely in the loop with a monthly reporting schedule that shows everything we’ve done and how it has impacted your online presence.</p>
+                </div>
+                <div class="col-xm-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 seo_service_information_content">
+                    <span class="flaticon-article"></span>
+                    <h5 class="seo_service_information_h5">Content Marketing</h5>
+                    <p class="seo_service_information_p">Content is still king in the online world. This can include new on-page content, regular blogs, newsworthy press releases, or complete eBooks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="seo_price_table">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable">
+                        <div class="pricing-content">
+                            <div class="pricingTable-header">
+                                <h3 class="title">Local Plan</h3>
+                            </div>
+                            <ul class="content-list">
+                                <li class="pricingTable-header_subtitle">Is this plan right for your business?</li>
+                                <li>This is the ideal plan for advertising a physical location and bringing people within your community right to your doorstep.
+                                    <br>
+                                    <br>
+                                    <br>
+                                </li>
+
+                            </ul>
+                            <div class="price-value">
+                                <span class="amount">$40.00</span>
+                                <span class="duration">per month</span>
+                            </div>
+                            <div class="pricingTable-signup">
+                                <a href="index.html#contact">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable blue">
+                        <div class="pricing-content">
+                            <div class="pricingTable-header">
+                                <h3 class="title">National Plan</h3>
+                            </div>
+                            <ul class="content-list">
+                                <li class="pricingTable-header_subtitle">Is this plan right for your business?</li>
+                                <li>If you are need to reach a nation-wide (or even international) audience, this plan includes everything you require.
+                                    <br>
+                                    <br>
+                                </li>
+
+                            </ul>
+                            <div class="price-value">
+                                <span class="amount">$80.00</span>
+                                <span class="duration">per month</span>
+                            </div>
+                            <div class="pricingTable-signup">
+                                <a href="index.html#contact">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable blue">
+                        <div class="pricing-content">
+                            <div class="pricingTable-header">
+                                <h3 class="title">Enterprise Plan</h3>
+                            </div>
+                            <ul class="content-list">
+                                <li class="pricingTable-header_subtitle">Is this plan right for your business?</li>
+                                <li>Highly competitive national campaigns, e-commerce sites, and international organizations can dominate the SERPS with this plan.</li>
+
+                            </ul>
+                            <div class="price-value">
+                                <span class="amount">$120.00</span>
+                                <span class="duration">per month</span>
+                            </div>
+                            <div class="pricingTable-signup">
+                                <a href="index.html#contact">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--Footer-->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="Follow-Us col-xm-6 col-sm-4 col-lg-2">
+                    <h3 class="footer-title-text">Follow Us</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/technooutsource">
+                                <ion-icon name="logo-facebook" class="socil_icon"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <ion-icon name="logo-twitter" class="socil_icon"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <ion-icon name="logo-youtube" class="socil_icon"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="links col-xm-6 col-sm-4 col-lg-2">
+                    <h3 class="footer-title-text">Links</h3>
+                    <ul class="link-ul">
+                        <li class="link-li">
+                            <a href="index.html" class="links-a">Home</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#About_us" class="links-a">About Us</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#our_course" class="links-a">Courses</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#Our-Services" class="links-a">Our Services</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#portfolio" class="links-a">Portfolio</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#blog" class="links-a">Blogs</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="index.html#contact" class="links-a">Contact US</a>
+                        </li>
+                        <li class="link-li">
+                            <a href="admission.html" class="links-a">Admission</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Address col-xm-12 col-sm-4 col-lg-3">
+                    <h3 class="footer-title-text">Address</h3>
+                    <P class="Address-p">BANGLADESH OFFICE ADDRESS: Plot# 10/C, Road# 1/1, Block# Ka/Kha, Section# 6, Dhaka 1216</P>
+                    <p class="Address-p">UK OFFICE ADDRESS: No 1, 284 Barking Road, Eastham, London E6 3BA, United Kingdom.</p>
+                </div>
+                <div class="Map col-sm-12 col-lg-5">
+                    <h3 class="footer-title-text">Map</h3>
+                    <a href="https://goo.gl/maps/Kj7FSzo3uoxNYFqR8"><img src="images/map.png" class="map_image" /></a>
+                    <P class="Map-p">Mirpur, Dhaka, Bangladesh</P>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--CopyRight-->
+    <p class="copyright-text">Copyright and Reserved by ©Techno Outsource Designed by Team TechBCD</p>
+
+
+    <!-- Scroll Up -->
+    <div id="back-top">
+        <a title="Go to Top" href="#"><i class="fa fa-chevron-up"></i></a>
+    </div>
+
+    <!-- Java script Start -->
+    <script type="text/javascript " src="js/jquery.js "></script>
+    <script type="text/javascript " src="js/bootstrap.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
+    <script type="text/javascript " src="js/lightbox.min.js "></script>
+    <script type="text/javascript " src="js/wow.min.js "></script>
+    <script type="text/javascript " src="js/main.js "></script>
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js "></script>
+    <script type="text/javascript " src="js/jquery.nav.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- ===== IONICONS ===== -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script type="text/javascript " src="js/jquery.slicknav.min.js "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // Disable Right Click
+        document.querySelector('body').addEventListener('contextmenu', disableRightClick);
+
+        function disableRightClick(e) {
+            e.preventDefault();
+        }
+
+        $(function() {
+            var navbar = $('.header-sticky');
+            $(window).scroll(function() {
+                if ($(window).scrollTop() <= 40) {
+                    navbar.removeClass('navbar-scroll');
+                } else {
+                    navbar.addClass('navbar-scroll');
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
